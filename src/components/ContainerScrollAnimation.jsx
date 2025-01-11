@@ -29,7 +29,7 @@ export function ContainerScrollAnimation() {
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 sm:mb-8">
               Join us in a journey to explore, compete, and excel in the
               ever-evolving world of{" "}
-              <span className="bg-gradient-to-r from-blue-500 via-green-400 to-teal-300 inline-block text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-blue-500 via-green-400 to-teal-300 inline-block text-transparent bg-clip-text mb-6">
                 Cybersecurity Excellence.
               </span>
             </p>
@@ -37,9 +37,9 @@ export function ContainerScrollAnimation() {
         }
       >
         <Image
-          src="/image.png"
+          src="/kali.png"
           alt="hero"
-          height={500}
+          height={820}
           width={1200}
           className="mx-auto rounded-2xl object-cover h-full w-full sm:object-top shadow-lg"
           draggable={false}
