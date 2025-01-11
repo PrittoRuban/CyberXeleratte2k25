@@ -20,12 +20,17 @@ const Header = () => {
         >
           <img
             src="/rmkcet-logo.png"
-            className="h-14 w-14  object-cover"
+            className="h-14 w-14  object-cover mr-3"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            R.M.K College of Engineering and Technology
-          </span>
+          <div className="hidden md:flex flex-col">
+            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+              R.M.K College of Engineering and Technology
+            </span>
+            <span className="self-center text-md whitespace-nowrap dark:text-white">
+              Department of Computer Science and Engineering (Cyber Security)
+            </span>
+          </div>
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <Link
@@ -35,7 +40,7 @@ const Header = () => {
           >
             <button
               type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="bg-gradient-to-r from-blue-600 via-green-400 to-indigo-400 hover:from-indigo-400 hover:via-green-400 hover:to-blue-400 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-sm px-6 py-3 text-center text-white shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
             >
               Register
             </button>

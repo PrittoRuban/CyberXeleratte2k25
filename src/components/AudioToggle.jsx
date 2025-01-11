@@ -53,7 +53,7 @@ const AudioToggle = ({ src }) => {
         }`}
       >
         <span className="text-lg font-bold">
-          {isPlaying ? "Pause" : "Play"}
+          {isPlaying ? "Pause" : "Magic"}
         </span>
       </button>
     </div>

@@ -2,14 +2,15 @@
 import React from "react";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
+import Countdown from "./ui/Timer";
 
 export function ContainerScrollAnimation() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-hidden mt-8">
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-5xl md:text-6xl font-extrabold text-black dark:text-white sm:mb-8 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-extrabold mb-3 text-black dark:text-white sm:mb-5 leading-tight">
               Welcome to{" "}
               <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
                 CyberXelerate
@@ -36,14 +37,21 @@ export function ContainerScrollAnimation() {
           </>
         }
       >
-        <Image
-          src="/kali.png"
-          alt="hero"
-          height={820}
-          width={1200}
-          className="mx-auto rounded-2xl object-cover h-full w-full sm:object-top shadow-lg"
-          draggable={false}
-        />
+        <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8">
+          <Countdown />
+          <Image
+            src="/kali.png"
+            alt="hero"
+            height={820}
+            width={1200}
+            className="rounded-2xl object-cover sm:object-top shadow-lg"
+            draggable={false}
+          />
+          <p className="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center space-x-2">
+            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Let&apos;s get started! Happy Hacking</span>
+            <span className="text-2xl">🧑‍💻</span>
+          </p>
+        </div>
       </ContainerScroll>
     </div>
   );

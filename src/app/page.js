@@ -1,14 +1,24 @@
 "use client";
+import About from "@/components/About";
 import { ContainerScrollAnimation } from "@/components/ContainerScrollAnimation";
+import Events from "@/components/Events";
 import Header from "@/components/Header";
-import Image from "next/image";
+import Team from "@/components/Team";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import SectionDivider from "@/components/ui/section-divider";
 
 export default function Home() {
   return (
-    <div>
+    <main className="flex flex-col items-center px-4">
       <Header />
       <ContainerScrollAnimation />
-      Hello
-    </div>
+      <SectionDivider />
+      <About />
+      <Events />
+      <Team />
+      <Contact />
+      <Footer />
+    </main>
   );
 }

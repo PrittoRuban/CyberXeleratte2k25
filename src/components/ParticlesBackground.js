@@ -151,7 +151,7 @@ const ParticlesBackground = () => {
         #tsparticles {
           position: absolute;
           width: 100%;
-          height: 100%;
+          height: 150%;
           background-color: mirror;
           background-repeat: no-repeat;
           background-size: cover;
