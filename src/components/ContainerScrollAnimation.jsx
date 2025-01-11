@@ -26,7 +26,7 @@ export function ContainerScrollAnimation() {
                 unparalleled opportunities.
               </span>
             </p>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400">
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 sm:mb-8">
               Join us in a journey to explore, compete, and excel in the
               ever-evolving world of{" "}
               <span className="bg-gradient-to-r from-blue-500 via-green-400 to-teal-300 inline-block text-transparent bg-clip-text">
