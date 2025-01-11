@@ -116,7 +116,7 @@ const ParticlesBackground = () => {
               "enable": true,
               "outMode": "out",
               "random": false,
-              "speed": 4,
+              "speed": 6,
               "straight": false
             },
             "number": {
@@ -124,7 +124,7 @@ const ParticlesBackground = () => {
                 "enable": true,
                 "area": 1000
               },
-              "value": 40
+              "value": 30
             },
             "opacity": {
               "value": 0.5
@@ -143,7 +143,6 @@ const ParticlesBackground = () => {
       <style jsx global>{`
         body {
           margin: 0;
-          font: normal 75% Arial, Helvetica, sans-serif;
         }
         canvas {
           display: block;
@@ -153,7 +152,7 @@ const ParticlesBackground = () => {
           position: absolute;
           width: 100%;
           height: 100%;
-          background-color: black;
+          background-color: mirror;
           background-repeat: no-repeat;
           background-size: cover;
           background-position: 50% 50%;
