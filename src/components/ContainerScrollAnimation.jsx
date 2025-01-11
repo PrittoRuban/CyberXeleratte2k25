@@ -9,26 +9,39 @@ export function ContainerScrollAnimation() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-black dark:text-white sm:mb-7">
-              At{" "}
-              <span className="text-red-600 font-extrabold ">
-                CyberXelerate' 2k25
-              </span>
-              <br />
-              Unleash the power of <br />
-              <span className="text-4xl md:text-[6rem] mt-1 leading-none font-bold">
-                Cybersecurity Innovations
+            <h1 className="text-5xl md:text-6xl font-extrabold text-black dark:text-white sm:mb-8 leading-tight">
+              Welcome to{" "}
+              <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+                CyberXelerate
               </span>
             </h1>
+            <p className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-6">
+              Empowering the next generation of cybersecurity enthusiasts
+              through{" "}
+              <span className="text-blue-500 dark:text-green-400 font-bold">
+                cutting-edge competitions
+              </span>{" "}
+              and{" "}
+              <span className="text-indigo-500 dark:text-indigo-400 font-bold">
+                unparalleled opportunities.
+              </span>
+            </p>
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400">
+              Join us in a journey to explore, compete, and excel in the
+              ever-evolving world of{" "}
+              <span className="bg-gradient-to-r from-blue-500 via-green-400 to-teal-300 inline-block text-transparent bg-clip-text">
+                Cybersecurity Excellence.
+              </span>
+            </p>
           </>
         }
       >
         <Image
-          src='/image.png'
+          src="/image.png"
           alt="hero"
-          height={420}
-          width={1000}
-          className="mx-auto rounded-2xl object-cover h-full w-full ml-6 sm:ml-0 sm:object-top"
+          height={500}
+          width={1200}
+          className="mx-auto rounded-2xl object-cover h-full w-full sm:object-top shadow-lg"
           draggable={false}
         />
       </ContainerScroll>
