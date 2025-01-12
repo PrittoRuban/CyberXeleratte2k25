@@ -56,11 +56,11 @@ export function ContainerScrollAnimation() {
             className="rounded-2xl object-cover sm:object-top shadow-lg"
             draggable={false}
           />
-          <p className="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center space-x-2">
-            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text mb-4">
+          <p className="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center space-x-2  mb-4">
+            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
               Let&apos;s get started! Happy Hacking
             </span>
-            <span className="text-2xl">🧑‍💻</span>
+            <span className="2xl">🧑‍💻</span>
           </p>
         </div>
       </ContainerScroll>
