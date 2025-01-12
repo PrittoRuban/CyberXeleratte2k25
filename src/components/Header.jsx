@@ -21,9 +21,9 @@ const Header = () => {
           <img
             src="/rmkcet-logo.png"
             className="h-14 w-14  object-cover mr-3"
-            alt="Flowbite Logo"
+            alt="RMKCET Logo"
           />
-          <div className="hidden md:flex flex-col">
+          <div className="hidden xl:flex flex-col">
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               R.M.K College of Engineering and Technology
             </span>

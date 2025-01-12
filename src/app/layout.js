@@ -1,6 +1,6 @@
 import { Capriola } from "next/font/google";
 import "./globals.css";
-import ParticlesBackground from "@/components/ParticlesBackground";
+import ParticlesBackground from "@/components/ui/ParticlesBackground";
 import AudioToggle from "@/components/AudioToggle";
 
 const geistSans = Capriola({
@@ -27,8 +27,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AudioToggle src="/Remember-The-Name.mp3" />
         <ParticlesBackground />
+        <AudioToggle src="/Remember-The-Name.mp3" />
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#423d3d]"></div>
         {/** <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div> **/}
         <div className="relative  z-20">{children}</div>

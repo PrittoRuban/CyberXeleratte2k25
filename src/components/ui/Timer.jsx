@@ -64,7 +64,7 @@ const Countdown = ({
         whileHover={{ scale: 1.1, rotate: 3 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
-        <span className="countdown font-mono text-4xl text-blue-700 dark:text-blue-400">
+        <span className="countdown font-mono text-4xl text-blue-600 dark:text-blue-500">
           <span>{time.days}</span>
         </span>
         <div className="text-gray-600 dark:text-gray-400">days</div>
@@ -74,7 +74,7 @@ const Countdown = ({
         whileHover={{ scale: 1.1, rotate: -3 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
-        <span className="countdown font-mono text-4xl text-green-700 dark:text-green-400">
+        <span className="countdown font-mono text-4xl text-green-500 dark:text-green-500">
           <span>{time.hours}</span>
         </span>
         <div className="text-gray-600 dark:text-gray-400">hours</div>
@@ -84,7 +84,7 @@ const Countdown = ({
         whileHover={{ scale: 1.1, rotate: 3 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
-        <span className="countdown font-mono text-4xl text-yellow-700 dark:text-yellow-400">
+        <span className="countdown font-mono text-4xl text-indigo-400 dark:text-indigo-500">
           <span>{time.minutes}</span>
         </span>
         <div className="text-gray-600 dark:text-gray-400">min</div>
@@ -94,7 +94,7 @@ const Countdown = ({
         whileHover={{ scale: 1.1, rotate: -3 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
-        <span className="countdown font-mono text-4xl text-red-700 dark:text-red-400">
+        <span className="countdown font-mono text-4xl text-red-700 dark:text-indigo-400">
           <span>{time.seconds}</span>
         </span>
         <div className="text-gray-600 dark:text-gray-400">sec</div>
