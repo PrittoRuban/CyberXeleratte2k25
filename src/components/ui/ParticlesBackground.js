@@ -148,14 +148,13 @@ const ParticlesBackground = () => {
           display: block;
           vertical-align: bottom;
         }
-        #tsparticles {
+         #tsparticles {
           position: fixed;
+          top: 0;
+          left: 0;
           width: 100%;
           height: 100%;
-          background-color: mirror;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: 50% 50%;
+          z-index: -1; /* Ensure it stays behind other content */
         }
       `}</style>
     </>
