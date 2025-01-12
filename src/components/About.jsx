@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 import { LampContainer } from "@/components/ui/lamp";
 
 export default function About() {
-  useSectionObserver("about", "CyberXelerate-2k24");
+  useSectionObserver("about", "CyberXelerate-2k25");
 
   return (
     <section
       id="about"
-      className="relative py-16 text-white "
+      className="relative py-8 text-white bg-transparent mt-40 sm:mt-0"
     >
       <LampContainer>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 "
+          className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8"
         >
           {/* Main Heading */}
           <motion.h1
@@ -40,7 +40,7 @@ export default function About() {
           >
             Join us for the{" "}
             <span className="font-bold text-white">
-              CyberXelerate-2k24 Symposium
+              CyberXelerate' 2k25 Symposium
             </span>
             , organized by the{" "}
             <span className="font-bold text-white">
@@ -89,11 +89,13 @@ export default function About() {
                     "Convenient transport provided, with routes updated via WhatsApp.",
                 },
               ].map((item, index) => (
-                <li
-                  key={index}
-                  className="flex flex-col sm:flex-row items-start sm:items-center gap-2 md:gap-4"
-                >
-                  <span className="text-blue-400 font-semibold">➤</span>
+                <li key={index} className="flex items-start gap-2 sm:gap-4">
+                  <span
+                    className="text-blue-400 font-semibold"
+                    aria-hidden="true"
+                  >
+                    ➤
+                  </span>
                   <span className="text-gray-300 text-sm sm:text-base md:text-lg">
                     <span className="font-bold text-white">{item.text}</span>:{" "}
                     {item.description}
@@ -115,7 +117,7 @@ export default function About() {
             </h2>
             <p className="mt-4 text-gray-300 text-sm sm:text-base md:text-lg">
               📅 <span className="font-bold text-white">Date</span>: February 5,
-              2024 <br />
+              2025 <br />
               📍 <span className="font-bold text-white">Location</span>: R.M.K.
               College of Engineering and Technology, Tamil Nadu
             </p>

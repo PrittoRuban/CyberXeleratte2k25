@@ -71,9 +71,9 @@ const Header = () => {
           >
             <button
               type="button"
-              className="bg-gradient-to-r text-white hover:text-gray-800 from-blue-400 via-green-400 to-indigo-400 hover:from-indigo-400 hover:via-green-400 hover:to-blue-400 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-sm px-6 py-2 shadow-lg transition-transform transform hover:scale-105"
+              className="bg-gradient-to-r h-10 text-white from-blue-400 via-green-400 to-indigo-400 hover:from-indigo-400 hover:via-green-400 hover:to-blue-400 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-sm px-6 py-2 shadow-lg transition-transform transform hover:scale-105"
             >
-              Register
+              Register Now
             </button>
           </Link>
           <button
