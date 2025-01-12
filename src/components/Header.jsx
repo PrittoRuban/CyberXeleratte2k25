@@ -118,9 +118,9 @@ const Header = () => {
                 <Link
                   href={`#${item.id}`}
                   onClick={() => handleSectionClick(item.id)}
-                  className={`block py-2 px-4 font-bold rounded ${
+                  className={`block py-2 px-4 font-bold rounded-full ${
                     activeSection === item.id
-                      ? "text-blue-700 bg-gray-700"
+                      ? "text-blue-700  border-2 border-indigo-50"
                       : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
                   } dark:text-white dark:hover:bg-gray-700 md:dark:hover:text-blue-500`}
                 >

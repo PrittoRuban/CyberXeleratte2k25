@@ -47,14 +47,24 @@ const AudioToggle = ({ src }) => {
       {/* Play/Pause Button */}
       <button
         onClick={togglePlayPause}
-        className={`relative flex items-center justify-center w-16 h-16 rounded-full shadow-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white focus:outline-none focus:ring-4 focus:ring-purple-300 
-        transition-transform transform ${
-          isPlaying ? "scale-90" : "hover:scale-110"
+        className={`relative flex items-center justify-center w-16 h-16 rounded-full shadow-lg bg-gradient-to-br from-blue-500 via-green-500 to-indigo-400  text-white focus:outline-none focus:ring-4 focus:ring-pink-300 transition-transform transform duration-300 ease-out ${
+          isPlaying ? "scale-95" : "hover:scale-105"
         }`}
+        aria-label={isPlaying ? "Pause music" : "Play magic music"}
       >
-        <span className="text-lg font-bold">
+        <span
+          className={`text-lg font-bold transition-opacity duration-200 ${
+            isPlaying ? "opacity-70" : "opacity-100"
+          }`}
+        >
           {isPlaying ? "Pause" : "Magic"}
         </span>
+        <span
+          className={`absolute w-3 h-3 rounded-full bg-white ${
+            isPlaying ? "animate-ping opacity-50" : "animate-none opacity-0"
+          }`}
+          style={{ top: "10%", left: "10%" }}
+        />
       </button>
     </div>
   );
