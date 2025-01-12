@@ -3,10 +3,12 @@ import React from "react";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
 import Countdown from "./ui/Timer";
+import ParticlesBackground from "./ui/ParticlesBackground";
 
 export function ContainerScrollAnimation() {
   return (
     <div className="flex flex-col overflow-hidden mt-8">
+      <ParticlesBackground />
       <ContainerScroll
         titleComponent={
           <>
