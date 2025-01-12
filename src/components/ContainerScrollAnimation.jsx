@@ -52,7 +52,7 @@ export function ContainerScrollAnimation() {
             draggable={false}
           />
           <p className="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center space-x-2">
-            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text mb-4">
               Let&apos;s get started! Happy Hacking
             </span>
             <span className="text-2xl">🧑‍💻</span>

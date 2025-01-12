@@ -40,7 +40,7 @@ const Header = () => {
           >
             <button
               type="button"
-              className="bg-gradient-to-r from-blue-600 via-green-400 to-indigo-400 hover:from-indigo-400 hover:via-green-400 hover:to-blue-400 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-sm px-6 py-3 text-center text-white shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-gradient-to-r text-gray-800 from-blue-400 via-green-400 to-indigo-400 hover:from-indigo-400 hover:via-green-400 hover:to-blue-400 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-sm px-6 py-3 text-center shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
             >
               Register
             </button>
