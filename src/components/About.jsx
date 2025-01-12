@@ -96,7 +96,7 @@ export default function About() {
                   >
                     ➤
                   </span>
-                  <span className="text-gray-300 text-sm sm:text-base md:text-lg">
+                  <span className="text-gray-300 text-base md:text-xl">
                     <span className="font-bold text-white">{item.text}</span>:{" "}
                     {item.description}
                   </span>
@@ -115,7 +115,7 @@ export default function About() {
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-teal-300">
               Event Details
             </h2>
-            <p className="mt-4 text-gray-300 text-sm sm:text-base md:text-lg">
+            <p className="mt-4 text-gray-300 text-base sm:text-base md:text-lg">
               📅 <span className="font-bold text-white">Date</span>: February 5,
               2025 <br />
               📍 <span className="font-bold text-white">Location</span>: R.M.K.
