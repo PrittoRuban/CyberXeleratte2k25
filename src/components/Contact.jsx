@@ -1,9 +1,18 @@
-import React from 'react'
+"use client";
 
-const Contact = () => {
+import React from "react";
+import { useSectionObserver } from "@/hooks/intersection-observer";
+import SectionHeading from "./ui/section-heading";
+
+export default function Contact() {
+  useSectionObserver("contact", "Contact");
+
   return (
-    <div>Contact</div>
-  )
+    <section
+      id="contact"
+      className=""
+    >
+      <SectionHeading>Contact</SectionHeading>
+    </section>
+  );
 }
-
-export default Contact

@@ -108,7 +108,7 @@ const Header = () => {
         >
           <ul className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 border border-gray-100 rounded-lg md:border-0 dark:border-gray-700">
             {[
-              { id: "", label: "Home" },
+              { id: "home", label: "Home" },
               { id: "about", label: "About" },
               { id: "events", label: "Events" },
               { id: "team", label: "Team" },
