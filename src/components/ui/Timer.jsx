@@ -1,51 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const Countdown = ({
-  initialDays = 15,
-  initialHours = 10,
-  initialMinutes = 24,
-  initialSeconds = 0,
-}) => {
-  const [time, setTime] = useState({
-    days: initialDays,
-    hours: initialHours,
-    minutes: initialMinutes,
-    seconds: initialSeconds,
-  });
+const Countdown = ({ eventDate }) => {
+  const calculateTimeLeft = () => {
+    const difference = +new Date(eventDate) - +new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [time, setTime] = useState(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTime((prevTime) => {
-        let { days, hours, minutes, seconds } = prevTime;
-
-        if (seconds > 0) {
-          seconds -= 1;
-        } else {
-          seconds = 59;
-          if (minutes > 0) {
-            minutes -= 1;
-          } else {
-            minutes = 59;
-            if (hours > 0) {
-              hours -= 1;
-            } else {
-              hours = 23;
-              if (days > 0) {
-                days -= 1;
-              } else {
-                clearInterval(timer);
-              }
-            }
-          }
-        }
-
-        return { days, hours, minutes, seconds };
-      });
+      setTime(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [eventDate]);
 
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },

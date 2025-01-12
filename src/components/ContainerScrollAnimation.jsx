@@ -8,7 +8,7 @@ import { useSectionObserver } from "@/hooks/intersection-observer";
 import SectionHeading from "./ui/section-heading";
 
 export function ContainerScrollAnimation() {
-    useSectionObserver("home", "Home");
+  useSectionObserver("home", "Home");
   return (
     <section id="home" className="flex flex-col overflow-hidden mt-8">
       <ParticlesBackground />
@@ -47,7 +47,7 @@ export function ContainerScrollAnimation() {
         }
       >
         <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8">
-          <Countdown />
+          <Countdown eventDate="March 5, 2025 09:00:00" />
           <Image
             src="/kali.png"
             alt="hero"
