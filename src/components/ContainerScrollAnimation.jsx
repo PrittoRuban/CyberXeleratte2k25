@@ -11,7 +11,6 @@ export function ContainerScrollAnimation() {
   useSectionObserver("home", "Home");
   return (
     <section id="home" className="flex flex-col overflow-hidden mt-8">
-      <ParticlesBackground />
       <ContainerScroll
         titleComponent={
           <>
