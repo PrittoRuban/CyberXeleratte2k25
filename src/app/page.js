@@ -44,12 +44,12 @@ export default function Home() {
       // Cycle through greetings during loading
       const interval = setInterval(() => {
         setCurrentGreeting((prev) => (prev + 1) % greetings.length);
-      }, 300);
+      }, 400);
 
       // Simulate background loading (adjust timing if needed)
       const timeout = setTimeout(() => {
         setIsLoading(false);
-      }, 3000); // Adjust to match loading requirements
+      }, 4000); // Adjust to match loading requirements
 
       return () => {
         clearInterval(interval);
@@ -67,13 +67,13 @@ export default function Home() {
 
       <AnimatePresence>
         {isLoading ? (
-          // Loading Screen with Animated Greetings
+          // Loading Screen with Animated Greetings and Mirrored Background
           <motion.div
             key="loading-screen"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800 z-50"
+            className="fixed inset-0 flex items-center justify-center z-50 bg-gray-700 bg-opacity-50 backdrop-filter backdrop-blur-lg"
           >
             <motion.div
               key={currentGreeting}
