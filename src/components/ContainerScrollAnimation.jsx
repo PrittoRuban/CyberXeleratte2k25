@@ -10,7 +10,7 @@ import SectionHeading from "./ui/section-heading";
 export function ContainerScrollAnimation() {
   useSectionObserver("home", "Home");
   return (
-    <section id="home" className="flex flex-col overflow-hidden mt-8">
+    <section id="home" className="flex flex-col overflow-hidden mt-8 backdrop-blur-sm">
       <ContainerScroll
         titleComponent={
           <>
