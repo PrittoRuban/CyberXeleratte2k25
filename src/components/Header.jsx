@@ -54,15 +54,15 @@ const Header = () => {
             className="h-14 w-14 object-cover"
             alt="RMKCET Logo"
           />
-          <div className="hidden xl:flex flex-col">
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              R.M.K College of Engineering and Technology
-            </span>
-            <span className="self-center text-sm whitespace-nowrap dark:text-gray-300">
-              Department of Computer Science and Engineering (Cyber Security)
-            </span>
-          </div>
         </Link>
+        <div className="hidden xl:flex flex-col">
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+            R.M.K College of Engineering and Technology
+          </span>
+          <span className="self-center text-sm whitespace-nowrap dark:text-gray-300">
+            Department of Computer Science and Engineering (Cyber Security)
+          </span>
+        </div>
 
         <div className="flex md:order-2 space-x-3 rtl:space-x-reverse">
           <Link

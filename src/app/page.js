@@ -95,6 +95,7 @@ export default function Home() {
             <About />
             <Events />
             <Team />
+            <SectionDivider />
             <Contact />
             <Footer />
           </main>

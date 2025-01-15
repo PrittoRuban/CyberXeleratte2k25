@@ -63,7 +63,7 @@ export default function Team() {
   return (
     <section id="team" className="backdrop-blur-sm bg-opacity-10">
       <SectionHeading>Team</SectionHeading>
-      <AnimatedTestimonials testimonials={testimonials} />;
+      <AnimatedTestimonials testimonials={testimonials} />
     </section>
   );
 }

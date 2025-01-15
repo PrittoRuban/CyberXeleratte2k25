@@ -118,7 +118,7 @@ export default function About() {
             <p className="mt-4 text-gray-300 text-base sm:text-base md:text-lg">
               📅 <span className="font-bold text-white">Date</span>: February 5,
               2025 <br />
-              📍 <span className="font-bold text-white">Location</span>: R.M.K.
+              📍 <span className="font-bold text-white">Location</span>: R.M.K
               College of Engineering and Technology, Tamil Nadu
             </p>
           </motion.div>
