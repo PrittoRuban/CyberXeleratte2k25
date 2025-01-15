@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,12 +70,13 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button
-              type="button"
-              className="bg-gradient-to-r h-10 text-white from-blue-400 via-green-400 to-indigo-400 hover:from-indigo-400 hover:via-green-400 hover:to-blue-400 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-sm px-6 py-2 shadow-lg transition-transform transform hover:scale-105"
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
             >
-              Register Now
-            </button>
+              <span> Register Now</span>
+            </HoverBorderGradient>
           </Link>
           <button
             onClick={toggleMenu}
@@ -121,8 +123,8 @@ const Header = () => {
                   className={`block py-2 px-4 font-bold rounded-full ${
                     activeSection === item.id
                       ? "text-blue-700  border-2 border-indigo-50"
-                      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
-                  } dark:text-white dark:hover:bg-gray-700 md:dark:hover:text-blue-500`}
+                      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent"
+                  } dark:text-white dark:hover:bg-gray-700`}
                 >
                   {item.label}
                 </Link>
