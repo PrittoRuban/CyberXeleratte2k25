@@ -1,11 +1,21 @@
-import { Link } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLinktree, SiX } from "react-icons/si";
+import GoogleMap from "./ui/gmap";
+import SectionHeading from "./ui/section-heading";
 
 const Footer = () => {
+  const address = "RSM Nagar, Gummidipoondi Taluk, Puduvoyal, Thiruvallur, Tamil Nadu 601206, India";
   return (
-    <footer className="relative  text-black dark:text-white  py-8 backdrop-blur-sm">
+    <footer className="relative  text-black dark:text-white py-8 backdrop-blur-sm">
       <div className="bg-[#fbe2e3] absolute -z-10 left-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#4b2c2c]"></div>
+
+      <div className="container mx-auto px-4 max-w-screen-md py-12 mb-12">
+        <SectionHeading>Our Location</SectionHeading>
+        <h3 className="text-center text-lg font-semibold mb-4">
+        RSM Nagar, Gummidipoondi Taluk, Puduvoyal, Tamil Nadu 601 206
+        </h3>
+        <GoogleMap address={address} />
+      </div>
 
       <div className="container mx-auto px-6 flex md:space-x-52 flex-col items-center md:flex-row md:justify-between md:gap-6 z-10 max-w-screen-lg">
         <div className="text-center md:text-left">

@@ -47,13 +47,13 @@ const AudioToggle = ({ src }) => {
       {/* Play/Pause Button */}
       <button
         onClick={togglePlayPause}
-        className={`relative flex items-center justify-center w-16 h-16 rounded-full shadow-lg bg-gradient-to-br from-blue-500 via-green-500 to-indigo-400  text-white focus:outline-none focus:ring-4 focus:ring-pink-300 transition-transform transform duration-300 ease-out ${
+        className={`relative flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full shadow-lg bg-gradient-to-br from-blue-500 via-green-500 to-indigo-400  text-white focus:outline-none focus:ring-4 focus:ring-pink-300 transition-transform transform duration-300 ease-out ${
           isPlaying ? "scale-95" : "hover:scale-105"
         }`}
         aria-label={isPlaying ? "Pause music" : "Play magic music"}
       >
         <span
-          className={`text-lg font-bold transition-opacity duration-200 ${
+          className={`text-sm sm:text-lg font-bold transition-opacity duration-200 ${
             isPlaying ? "opacity-70" : "opacity-100"
           }`}
         >

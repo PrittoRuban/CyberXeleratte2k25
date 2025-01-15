@@ -9,7 +9,7 @@ export const HoverEffect = ({ items, className }) => {
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5",
         className
       )}
     >
@@ -55,7 +55,7 @@ const HoverCard = ({ item }) => (
     <CardTitle>{item.title}</CardTitle>
     {item.description && <CardDescription>{item.description}</CardDescription>}
     {item.details && (
-      <div className="mt-4 space-y-2">
+      <div className="mt-2 space-y-2">
         {item.details.map((detail, index) => (
           <p key={index} className="text-zinc-400 text-sm flex flex-col">
             <strong>{detail.name}</strong> {detail.phone}
@@ -83,7 +83,7 @@ export const Card = ({ className, children }) => {
 
 export const CardTitle = ({ className, children }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-2", className)}>
       {children}
     </h4>
   );
