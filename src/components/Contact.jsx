@@ -16,21 +16,21 @@ export const contacts = [
   {
     title: "Head Of Department CSE (Cyber Security)",
     details: [
-      { name: "Dr. Udhaya Sankar S M", phone: "" },
+      { name: "Dr. Udhaya Sankar S M", phone: "+91 0000000000" },
     ],
   },
   {
     title: "Faculty Coordinators",
     details: [
-      { name: "Dr. Dharini N", phone: "+91 9003197244" },
-      { name: "Mr. Vinoth Kumar V", phone: "+91 7358692446" },
+      { name: "Dr. Dharini N", phone: "+91 0000000000" },
+      { name: "Mr. Vinoth Kumar V", phone: "+91 0000000000" },
     ],
   },
   {
     title: "Student Coordinators",
     details: [
-      { name: "Mr. Mohammed Mustafa A", phone: "+91 9087949027" },
-      { name: "Mr. Aswanth Babu", phone: "+91 9087949027" },
+      { name: "Mr. Mohammed Mustafa A", phone: "+91 0000000000" },
+      { name: "Mr. Aswanth Babu", phone: "+91 0000000000" },
     ],
   },
 ];
