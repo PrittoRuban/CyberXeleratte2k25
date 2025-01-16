@@ -10,10 +10,7 @@ export default function About() {
   useSectionObserver("about", "CyberXelerate-2k25");
 
   return (
-    <section
-      id="about"
-      className="relative py-8 text-white bg-transparent mt-40 sm:mt-0"
-    >
+    <section id="about" className="relative py-8 bg-transparent mt-40 sm:mt-0">
       <LampContainer>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -26,7 +23,7 @@ export default function About() {
             initial={{ opacity: 0.5, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 1, ease: "easeInOut" }}
-            className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight"
+            className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-100"
           >
             Ignite Your Cybersecurity Passion
           </motion.h1>
@@ -36,23 +33,26 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
-            className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-300"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-300"
           >
             Join us for the{" "}
-            <span className="font-bold text-white">
+            <span className="font-bold text-gray-900 dark:text-white">
               CyberXelerate' 2k25 Symposium
             </span>
             , organized by the{" "}
-            <span className="font-bold text-white">
+            <span className="font-bold text-gray-900 dark:text-white">
               Department of CSE (Cyber Security)
             </span>{" "}
             at{" "}
-            <span className="font-bold text-white">
+            <span className="font-bold text-gray-900 dark:text-white">
               R.M.K. College of Engineering and Technology
             </span>
             . This thrilling event is packed with exciting competitions designed
             to challenge your skills and knowledge in the dynamic world of{" "}
-            <span className="font-bold text-white">cybersecurity</span>.
+            <span className="font-bold text-gray-900 dark:text-white">
+              cybersecurity
+            </span>
+            .
           </motion.p>
 
           {/* Features */}
@@ -91,14 +91,16 @@ export default function About() {
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-2 sm:gap-4">
                   <span
-                    className="text-blue-400 font-semibold"
+                    className="text-blue-500 dark:text-teal-300 font-semibold"
                     aria-hidden="true"
                   >
                     ➤
                   </span>
-                  <span className="text-gray-300 text-base md:text-xl">
-                    <span className="font-bold text-white">{item.text}</span>:{" "}
-                    {item.description}
+                  <span className="text-gray-600 dark:text-gray-300 text-base md:text-xl">
+                    <span className="font-bold text-gray-900 dark:text-white">
+                      {item.text}
+                    </span>
+                    : {item.description}
                   </span>
                 </li>
               ))}
@@ -112,14 +114,20 @@ export default function About() {
             transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
             className="mt-12"
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-teal-300">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-teal-500 dark:text-teal-300">
               Event Details
             </h2>
-            <p className="mt-4 text-gray-300 text-base sm:text-base md:text-lg">
-              📅 <span className="font-bold text-white">Date</span>: February 5,
-              2025 <br />
-              📍 <span className="font-bold text-white">Location</span>: R.M.K
-              College of Engineering and Technology, Tamil Nadu
+            <p className="mt-4 text-gray-600 dark:text-gray-300 text-base sm:text-base md:text-lg">
+              📅{" "}
+              <span className="font-bold text-gray-900 dark:text-white">
+                Date
+              </span>
+              : February 5, 2025 <br />
+              📍{" "}
+              <span className="font-bold text-gray-900 dark:text-white">
+                Location
+              </span>
+              : R.M.K College of Engineering and Technology, Tamil Nadu
             </p>
           </motion.div>
 
@@ -132,7 +140,7 @@ export default function About() {
           >
             <a
               href="#register"
-              className="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg hover:from-teal-400 hover:to-blue-500 transition-all"
+              className="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg hover:from-teal-400 hover:to-blue-500 transition-all dark:from-teal-400 dark:to-blue-500 dark:hover:from-blue-500 dark:hover:to-teal-400"
             >
               Register Now
             </a>

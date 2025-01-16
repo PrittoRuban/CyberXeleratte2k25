@@ -75,7 +75,7 @@ const ParticlesBackground = () => {
       <web-particles
         id="tsparticles"
         options='{
-          "fps_limit": 60,
+          "fps_limit": 144,
           "interactivity": {
             "detectsOn": "canvas",
             "events": {
@@ -101,10 +101,10 @@ const ParticlesBackground = () => {
           },
           "particles": {
             "color": {
-              "value": "#89f5ea"
+              "value": "#32CD32"
             },
             "links": {
-              "color": "#9bf8fa",
+              "color": "#00FFFF",
               "distance": 150,
               "enable": true,
               "opacity": 0.6,

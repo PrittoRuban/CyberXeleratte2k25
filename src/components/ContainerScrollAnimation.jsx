@@ -10,15 +10,18 @@ import SectionHeading from "./ui/section-heading";
 export function ContainerScrollAnimation() {
   useSectionObserver("home", "Home");
   return (
-    <section id="home" className="flex flex-col overflow-hidden mt-8 backdrop-blur-sm">
+    <section
+      id="home"
+      className="flex flex-col overflow-hidden mt-8 backdrop-blur-sm text-gray-950 dark:text-gray-50 dark:text-opacity-90"
+    >
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-5xl md:text-6xl font-bold sm:font-extrabold mb-3 text-black dark:text-white sm:mb-5 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold sm:font-extrabold mb-3 text-gray-950 dark:text-gray-50 sm:mb-5 leading-tight">
               Welcome to{" "}
-              <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400  text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
                 Cyber
-                <span className="text-6xl md:text-7xl bg-gradient-to-r font-bold from-indigo-400 via-green-500 to-blue-600 text-transparent bg-clip-text">
+                <span className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-indigo-400 via-green-500 to-blue-600 text-transparent bg-clip-text">
                   X
                 </span>
                 elerate
@@ -38,7 +41,7 @@ export function ContainerScrollAnimation() {
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 sm:mb-8">
               Join us in a journey to explore, compete, and excel in the
               ever-evolving world of{" "}
-              <span className="bg-gradient-to-r from-blue-500 via-green-400 to-teal-300 inline-block sm:mb-8  text-transparent bg-clip-text ">
+              <span className="bg-gradient-to-r from-blue-500 via-green-400 to-teal-300 inline-block sm:mb-8 text-transparent bg-clip-text">
                 Cybersecurity Excellence.
               </span>
             </p>
@@ -55,7 +58,7 @@ export function ContainerScrollAnimation() {
             className="rounded-2xl object-cover sm:object-top shadow-lg"
             draggable={false}
           />
-          <p className="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center space-x-2  mb-4">
+          <p className="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center space-x-2 mb-4">
             <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
               Let&apos;s get started! Happy Hacking
             </span>

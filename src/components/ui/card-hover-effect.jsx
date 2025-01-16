@@ -23,7 +23,7 @@ export const HoverEffect = ({ items, className }) => {
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200/80 dark:bg-slate-800/80 block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -57,7 +57,10 @@ const HoverCard = ({ item }) => (
     {item.details && (
       <div className="mt-2 space-y-2">
         {item.details.map((detail, index) => (
-          <p key={index} className="text-zinc-400 text-sm flex flex-col">
+          <p
+            key={index}
+            className="text-zinc-800 dark:text-zinc-400 text-sm flex flex-col"
+          >
             <strong>{detail.name}</strong> {detail.phone}
           </p>
         ))}
@@ -70,7 +73,7 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "backdrop-blur-sm rounded-2xl h-full w-full p-4 overflow-hidden border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative",
+        "backdrop-blur-sm rounded-2xl h-full w-full p-4 overflow-hidden border dark:border-white/[0.2] border-black/[0.1] group-hover:border-slate-700 relative",
         className
       )}
     >
@@ -83,7 +86,12 @@ export const Card = ({ className, children }) => {
 
 export const CardTitle = ({ className, children }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-2", className)}>
+    <h4
+      className={cn(
+        "text-zinc-900 dark:text-zinc-100 font-bold tracking-wide mt-2",
+        className
+      )}
+    >
       {children}
     </h4>
   );
@@ -93,7 +101,7 @@ export const CardDescription = ({ className, children }) => {
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-zinc-600 dark:text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >

@@ -53,7 +53,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`fixed w-full z-20 top-0 left-0 transition-transform duration-300 ease-in-out border-b border-gray-200 dark:border-gray-600 backdrop-blur-md 
+      className={`fixed w-full z-20 top-0 left-0 transition-transform duration-300 ease-in-out border-b-2 border-gray-300 dark:border-gray-600 backdrop-blur-md 
         ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3">
@@ -137,9 +137,9 @@ const Header = () => {
                   className={`block py-2 px-4 font-bold rounded-full transition-colors duration-200 ease-in-out 
                     ${
                       activeSection === item.id
-                        ? "text-blue-700 border-2"
-                        : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent"
-                    } dark:text-white dark:hover:bg-gray-700`}
+                        ? "border-2 border-gray-400 dark:border-gray-600"
+                        : "text-gray-900 "
+                    } dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600`}
                 >
                   {item.label}
                 </Link>
