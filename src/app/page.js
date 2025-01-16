@@ -9,7 +9,6 @@ import Team from "@/components/Team";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SectionDivider from "@/components/ui/section-divider";
-import ParticlesBackground from "@/components/ui/ParticlesBackground";
 
 const greetings = [
   { language: "Hello", color: "text-red-500" },
@@ -60,10 +59,6 @@ export default function Home() {
 
   return (
     <>
-      {/* Particles Background */}
-      <div className="fixed inset-0 -z-10">
-        <ParticlesBackground />
-      </div>
 
       <AnimatePresence>
         {isLoading ? (

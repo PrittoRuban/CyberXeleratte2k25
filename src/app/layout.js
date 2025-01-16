@@ -1,6 +1,5 @@
 import { Capriola } from "next/font/google";
 import "./globals.css";
-import ParticlesBackground from "@/components/ui/ParticlesBackground";
 import AudioToggle from "@/components/AudioToggle";
 import ActiveSectionContextProvider from "@/context/active-section";
 import ThemeSwitch from "@/components/ui/theme-switch";

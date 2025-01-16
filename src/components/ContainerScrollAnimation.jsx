@@ -3,7 +3,6 @@ import React from "react";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
 import Countdown from "./ui/Timer";
-import ParticlesBackground from "./ui/ParticlesBackground";
 import { useSectionObserver } from "@/hooks/intersection-observer";
 import SectionHeading from "./ui/section-heading";
 
