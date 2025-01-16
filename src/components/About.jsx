@@ -11,6 +11,7 @@ export default function About() {
 
   return (
     <section id="about" className="relative py-8 bg-transparent mt-40 sm:mt-0">
+    
       <LampContainer>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

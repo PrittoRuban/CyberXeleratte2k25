@@ -14,7 +14,7 @@ export default function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-gray-950 to-gray-700 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent dark:from-gray-50 dark:to-gray-300 dark:text-opacity-90 md:text-7xl"
+        className="mt-8 bg-transparent py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent dark:from-gray-50 dark:to-gray-300 dark:text-opacity-90 md:text-7xl"
       >
         Build lamps <br /> the right way
       </motion.h1>
@@ -26,7 +26,7 @@ export const LampContainer = ({ children, className }) => {
   return (
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center backdrop-blur-sm w-full rounded-md z-0 bg-gray-50 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90",
+        "relative flex min-h-screen flex-col items-center justify-center backdrop-blur-sm w-full rounded-md z-0 text-gray-950 dark:text-gray-50 dark:text-opacity-90",
         className
       )}
     >
