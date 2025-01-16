@@ -6,6 +6,8 @@ import { HoverBorderGradient } from "./ui/hover-border-gradient";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,13 +20,14 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "events", "team", "contact"];
       const scrollPos = window.scrollY;
+      const sections = ["home", "about", "events", "team", "contact"];
 
+      // Update active section based on scroll position
       sections.forEach((section) => {
         const sectionElement = document.getElementById(section);
         if (sectionElement) {
-          const offsetTop = sectionElement.offsetTop - 100; // Adjust for navbar height
+          const offsetTop = sectionElement.offsetTop - 120; // Adjust for navbar height
           const offsetHeight = sectionElement.offsetHeight;
 
           if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
@@ -32,16 +35,27 @@ const Header = () => {
           }
         }
       });
+
+      // Show or hide the header based on scroll direction
+      if (scrollPos > lastScrollY && scrollPos > 80) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      setLastScrollY(scrollPos);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   return (
-    <nav className="fixed backdrop-blur-md w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <nav
+      className={`fixed w-full z-20 top-0 left-0 transition-transform duration-300 ease-in-out border-b border-gray-200 dark:border-gray-600 backdrop-blur-md 
+        ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3">
         <Link
           href="https://rmkcet.ac.in"
@@ -51,7 +65,7 @@ const Header = () => {
         >
           <img
             src="/rmkcet-logo.png"
-            className="h-14 w-14 object-cover"
+            className="h-14 w-14 object-cover animate-pulse"
             alt="RMKCET Logo"
           />
         </Link>
@@ -73,9 +87,9 @@ const Header = () => {
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
-              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 hover:scale-105 transition-transform"
             >
-              <span> Register Now</span>
+              <span>Register Now</span>
             </HoverBorderGradient>
           </Link>
           <button
@@ -120,11 +134,12 @@ const Header = () => {
                 <Link
                   href={`#${item.id}`}
                   onClick={() => handleSectionClick(item.id)}
-                  className={`block py-2 px-4 font-bold rounded-full ${
-                    activeSection === item.id
-                      ? "text-blue-700  border-2 border-indigo-50"
-                      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent"
-                  } dark:text-white dark:hover:bg-gray-700`}
+                  className={`block py-2 px-4 font-bold rounded-full transition-colors duration-200 ease-in-out 
+                    ${
+                      activeSection === item.id
+                        ? "text-blue-700 border-2"
+                        : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent"
+                    } dark:text-white dark:hover:bg-gray-700`}
                 >
                   {item.label}
                 </Link>

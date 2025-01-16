@@ -3,6 +3,8 @@ import "./globals.css";
 import ParticlesBackground from "@/components/ui/ParticlesBackground";
 import AudioToggle from "@/components/AudioToggle";
 import ActiveSectionContextProvider from "@/context/active-section";
+import ThemeSwitch from "@/components/ui/theme-switch";
+import ThemeContextProvider from "@/context/theme-context";
 
 const geistSans = Capriola({
   subsets: ["latin"],
@@ -25,16 +27,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="!scroll-smooth !scroll-snap-y-mandatory">
-      <body
+      {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      > */}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
-        <AudioToggle src="/Remember-The-Name.mp3" />
+        {/* <AudioToggle src="/Remember-The-Name.mp3" /> */}
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#423d3d]"></div>
         {/** <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div> **/}
         <div className="relative  z-20">
-          <ActiveSectionContextProvider>
-            {children}
-          </ActiveSectionContextProvider>
+          <ThemeContextProvider>
+            <ActiveSectionContextProvider>
+              {children}
+              <ThemeSwitch />
+            </ActiveSectionContextProvider>
+          </ThemeContextProvider>
         </div>
       </body>
     </html>
