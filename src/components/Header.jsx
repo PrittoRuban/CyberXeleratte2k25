@@ -122,7 +122,7 @@ const Header = () => {
           } w-full md:flex md:w-auto md:order-1`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 rounded-lg md:border-0">
+          <ul className="flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-0 rounded-lg md:border-0">
             {[
               { id: "home", label: "Home" },
               { id: "about", label: "About" },

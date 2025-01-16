@@ -59,7 +59,6 @@ export default function Home() {
 
   return (
     <>
-
       <AnimatePresence>
         {isLoading ? (
           // Loading Screen with Animated Greetings and Mirrored Background

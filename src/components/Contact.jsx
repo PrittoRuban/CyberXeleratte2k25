@@ -5,7 +5,7 @@ import { useSectionObserver } from "@/hooks/intersection-observer";
 export default function Contact() {
   useSectionObserver("contact", "Contact");
   return (
-    <section id="contact" className="relative max-w-5xl mx-auto px-8 mb-12">
+    <section id="contact" className="relative max-w-5xl mx-auto px-8 mb-12 backdrop-blur-sm">
 
       <SectionHeading>Contact</SectionHeading>
       <HoverEffect items={contacts} className="gap-6" />
