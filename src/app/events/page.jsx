@@ -1,9 +1,16 @@
-import React from 'react'
+import Footer from "@/components/Footer";
+import React from "react";
+import Header from "./components/Header";
+import Events from "./components/Events";
 
 const page = () => {
   return (
-    <div>Events</div>
-  )
-}
+    <main className="flex flex-col items-center px-4 overflow-hidden">
+      <Header />
+      <Events />
+      <Footer />
+    </main>
+  );
+};
 
 export default page;
