@@ -58,8 +58,7 @@ const Header = () => {
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3">
         <Link
-          href="https://rmkcet.ac.in"
-          target="_blank"
+          href="/"
           rel="noopener noreferrer"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
