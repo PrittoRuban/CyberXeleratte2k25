@@ -11,19 +11,20 @@ export default function About() {
 
   return (
     <section id="about" className="relative py-8 bg-transparent mt-40 sm:mt-0">
-    
       <LampContainer>
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8"
         >
           {/* Main Heading */}
           <motion.h1
-            initial={{ opacity: 0.5, y: 100 }}
+            initial={{ opacity: 0.5, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 1, ease: "easeInOut" }}
+            transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+            viewport={{ once: true }}
             className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-100"
           >
             Ignite Your Cybersecurity Passion
@@ -31,9 +32,10 @@ export default function About() {
 
           {/* Intro Paragraph */}
           <motion.p
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
+            transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
             className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-300"
           >
             Join us for the{" "}
@@ -58,9 +60,10 @@ export default function About() {
 
           {/* Features */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4, duration: 1, ease: "easeOut" }}
+            transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
             className="mt-8"
           >
             <ul className="space-y-4 md:space-y-3">
@@ -110,9 +113,10 @@ export default function About() {
 
           {/* Event Details */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
+            transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
             className="mt-12"
           >
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-teal-500 dark:text-teal-300">
@@ -134,9 +138,10 @@ export default function About() {
 
           {/* Register Button */}
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
+            transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
             className="mt-8"
           >
             <a
