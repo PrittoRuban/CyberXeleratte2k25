@@ -20,7 +20,7 @@ const Event1 = () => {
             <img
               src="/temp1poster.png" // Replace with the actual path to your poster image
               alt="Dumb Bugs Poster"
-              className="w-full max-w-lg rounded-3xl shadow-lg dark:shadow-black/50"
+              className="w-full max-w-lg rounded-2xl shadow-lg dark:shadow-black/50"
             />
           </motion.div>
 
@@ -30,7 +30,8 @@ const Event1 = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeOut", duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-white dark:bg-gray-800 p-10 rounded-3xl shadow-lg dark:shadow-black/50 text-gray-900 dark:text-gray-100 flex flex-col justify-center w-full"
+            className="p-5 md:p-10 rounded-2xl shadow-lg dark:shadow-black/50 text-gray-900 dark:text-gray-100 flex flex-col justify-center w-full bg-white/30 dark:bg-black/30 backdrop-blur-md border border-gray-200/50 dark:border-gray-800/50"
+
           >
             {/* Event Title */}
             <motion.h1
