@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`fixed z-20 top-0 left-0 w-full transition-transform duration-300 ease-in-out border-b border-gray-300 dark:border-gray-600 backdrop-blur-lg bg-white/70 dark:bg-gray-900/80 shadow-lg ${
+      className={`fixed z-20 top-0 left-0 w-full transition-transform duration-300 ease-in-out border-b border-gray-300 dark:border-gray-600 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 shadow-lg ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
