@@ -10,6 +10,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SectionDivider from "@/components/ui/section-divider";
 
+
 const greetings = [
   { language: "Hello", color: "text-red-500" },
   { language: "Hola", color: "text-yellow-500" },
@@ -82,7 +83,7 @@ export default function Home() {
           </motion.div>
         ) : (
           // Main Content
-          <main className="flex flex-col items-center px-4 overflow-hidden">
+          <main className={`flex flex-col items-center px-4 overflow-hidden`}>
             <Header />
             <ContainerScrollAnimation />
             <SectionDivider />

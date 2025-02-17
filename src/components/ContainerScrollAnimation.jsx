@@ -49,7 +49,7 @@ export function ContainerScrollAnimation() {
       >
         <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 mb-2 mt-2">
         <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 mr-2 ml-2">
-          <Countdown eventDate="March 5, 2025 09:00:00" />
+          <Countdown eventDate="March 17, 2025 08:30:00" />
           <Image
             src="/kali.png"
             alt="hero"
