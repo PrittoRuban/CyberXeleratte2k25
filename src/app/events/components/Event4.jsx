@@ -50,7 +50,7 @@ const TechMemeAThon = () => {
               className="flex justify-center"
             >
               <img
-                src="/temp1poster.png" // Replace with your actual poster path
+                src="/memeathon-poster.png" // Replace with your actual poster path
                 alt="Tech Meme-A-Thon Poster"
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
               />
@@ -156,7 +156,9 @@ const TechMemeAThon = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe-b8qsN3wjS3iXM4QUme-iqMF4mjcJhnTO-aedSSKZ2_CcRg/viewform"
+              target="_blank"
+              rel="noreferrer noopener"
               className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg"
             >
               Register Now

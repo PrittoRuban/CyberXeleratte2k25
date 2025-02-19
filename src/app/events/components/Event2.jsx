@@ -52,7 +52,7 @@ const Event2 = () => {
               className="flex justify-center"
             >
               <img
-                src="/temp1poster.png" // Replace with your actual image path
+                src="/ctf-poster.jpg" // Replace with your actual image path
                 alt="HackOff CTF Poster"
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
               />
@@ -140,7 +140,9 @@ const Event2 = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeeB8xfGUF1n6Wtu9m8CyYFCNduUaddHKwNVj4w2LyWZ8YlQw/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg hover:from-teal-400 hover:to-blue-500 transition-all"
             >
               Register Now

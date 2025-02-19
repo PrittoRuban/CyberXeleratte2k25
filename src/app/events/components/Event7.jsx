@@ -61,7 +61,7 @@ const Pencilvania = () => {
               className="flex justify-center"
             >
               <img
-                src="/temp1poster.png" // Replace with your actual poster image path
+                src="/pencil-poster.jpg" // Replace with your actual poster image path
                 alt="Pencilvania Poster"
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm object-cover rounded-2xl shadow-lg dark:shadow-black/50"
               />
@@ -161,7 +161,9 @@ const Pencilvania = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfMI6C9CLEy4SZB-wRHT1N78vHTuUAP2Zxx8ODkkWCNKpkSig/viewform"
+              target="_blank"
+              rel="noreferrer noopener"
               className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg"
             >
               Register Now

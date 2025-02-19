@@ -50,7 +50,7 @@ const ProjectXplosion = () => {
               className="flex justify-center"
             >
               <img
-                src="/temp1poster.png" // Replace with actual image path
+                src="/project-poster.png" // Replace with actual image path
                 alt="ProjectXplosion Poster"
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
               />
@@ -161,7 +161,9 @@ const ProjectXplosion = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfsNP5BFWZgp9RNKsfEK-ZT9E6ghrpP5iHfJyPrXTtHIDDs-Q/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg"
             >
               Register Now
