@@ -127,7 +127,7 @@ export default function About() {
               <span className="font-bold text-gray-900 dark:text-white">
                 Date
               </span>
-              : February 5, 2025 <br />
+              : March 17, 2025 <br />
               📍{" "}
               <span className="font-bold text-gray-900 dark:text-white">
                 Location

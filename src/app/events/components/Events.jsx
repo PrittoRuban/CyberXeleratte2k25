@@ -35,13 +35,15 @@ export default function Events() {
             whileTap={{ scale: 0.95 }}
             className="cursor-pointer"
           >
-            <PinContainer title="/events/cipher-dexterity">
+            <PinContainer title="/events/projectxplosion">
               <div className="flex flex-col p-6 bg-gray-50 dark:bg-gray-900 shadow-xl rounded-lg transition-all w-[21rem] h-[21rem] space-y-4">
                 <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200">
-                  Cipher Dexterity
+                  ProjectXplosion
                 </h3>
                 <p className="text-base text-slate-500 dark:text-gray-400">
-                  Technical event on 5 February 2024.
+                  Showcase your innovative ideas where creativity meets
+                  technology. Present your projects across various domains,
+                  compete with the best, and win exciting cash prizes!
                 </p>
                 <div className="flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500">
                   <img
@@ -63,13 +65,15 @@ export default function Events() {
             whileTap={{ scale: 0.95 }}
             className="cursor-pointer"
           >
-            <PinContainer title="/events/code-challenge">
+            <PinContainer title="/events/hackoff-ctf">
               <div className="flex flex-col p-6 bg-gray-50 dark:bg-gray-900 shadow-xl rounded-lg transition-all w-[21rem] h-[21rem] space-y-4">
                 <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200">
-                  Code Challenge
+                  HACKOFF CTF
                 </h3>
                 <p className="text-base text-slate-500 dark:text-gray-400">
-                  Competitive coding on 10 February 2024.
+                  Engage in thrilling cyber challenges at Capture The Flag (CTF) event! Test your hacking
+                  skills, solve puzzles, and decode hidden messages to capture
+                  the hidden flag.
                 </p>
                 <div className="flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br from-green-500 via-teal-500 to-cyan-500">
                   <img
