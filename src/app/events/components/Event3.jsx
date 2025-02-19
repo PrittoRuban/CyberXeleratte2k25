@@ -90,17 +90,17 @@ const CodeSprintOdyssey = () => {
                   <span className="font-semibold">Mode:</span> Offline (<span className="font-bold">Venue:</span> To be decided).
                 </li>
                 <li>
-                  <span className="font-semibold">Prizes:</span> Exciting cash prizes for winners.
-                </li>
-                <li>
                   <span className="font-semibold">Round:</span> Single round to decide the top 3 teams based on leaderboard position.
+                </li>
+                <li className="text-red-500 dark:text-red-400 pt-8">
+                  <span className="font-semibold">Prizes:</span> Exciting cash prizes for winners and participation certificates for all.
                 </li>
               </ul>
             </motion.div>
           </div>
 
           {/* Contact Details */}
-          <div className="text-center py-6">
+          {/* <div className="text-center py-6">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -128,7 +128,7 @@ const CodeSprintOdyssey = () => {
             >
               📞 <span className="font-bold">Madhu Karthick A</span> - 8220096356
             </motion.p>
-          </div>
+          </div> */}
 
           {/* Register Now Button */}
           <div className="flex justify-center py-4">

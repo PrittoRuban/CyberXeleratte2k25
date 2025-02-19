@@ -119,7 +119,7 @@ const Event2 = () => {
 
           {/* Bottom Section: Register Now Button */}
           <div className="text-center py-8">
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -134,7 +134,7 @@ const Event2 = () => {
               <p>
                 📞 <span className="font-bold">Sree Kannan A</span> - 9566027639
               </p>
-            </motion.div>
+            </motion.div> */}
             <motion.a
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

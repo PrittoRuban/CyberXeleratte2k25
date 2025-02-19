@@ -14,17 +14,19 @@ const guidelines = [
 const timeline = [
   { time: "8:30 - 9:00", description: "Registration starts at Main Block" },
   { time: "9:00 - 10:00", description: "Inauguration ceremony at Seminar Hall - Main block" },
-  { time: "10:00 - 12:00", description: "Events (Time and venue will be informed shortly)" },
-  { time: "12:00 - 1:30", description: "Lunch - Both Veg and Non-Veg" },
+  { time: "10:00 - 12:45", description: "Events (Time and venue will be informed shortly)" },
+  { time: "12:45 - 1:30", description: "Lunch - Both Veg and Non-Veg" },
   { time: "1:30 - 2:00", description: "Valedictory ceremony" },
 ];
 
 export default function GeneralRules() {
-  useSectionObserver("rules", "General Rules");
+  useSectionObserver("guidelines", "Guidelines");
 
   return (
-    <section id="rules" className="py-16 px-4">
-      <div className="max-w-4xl mx-auto">
+    <section id="guidelines" className="py-16 px-4">
+      <div className="relative max-w-4xl mx-auto">
+      
+      <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#4a4770]"></div>
         {/* Header */}
         <header className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 drop-shadow-lg">

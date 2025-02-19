@@ -125,17 +125,19 @@ export default function Events() {
             whileTap={{ scale: 0.95 }}
             className="cursor-pointer"
           >
-            <PinContainer title="/events/hack-off">
+            <PinContainer title="/events/tech-meme-a-thon">
               <div className="flex flex-col p-6 bg-gray-50 dark:bg-gray-900 shadow-xl rounded-lg transition-all w-[21rem] h-[21rem] space-y-4">
                 <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200">
-                  Hack-Off
+                  Tech Meme-A-Thon
                 </h3>
                 <p className="text-base text-slate-500 dark:text-gray-400">
-                  Technical event on 5 February 2024.
+                  Welcome to Tech Memeathon, where humor meets technology! Ever
+                  laughed at a tech meme and thought, “I could do better”? Now's
+                  your chance!
                 </p>
                 <div className="flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br from-yellow-500 via-orange-500 to-red-500">
                   <img
-                    src="/temp4.png"
+                    src="/temp1.png"
                     alt="Event Banner"
                     className="object-cover w-full h-full"
                   />
@@ -153,17 +155,19 @@ export default function Events() {
             whileTap={{ scale: 0.95 }}
             className="cursor-pointer"
           >
-            <PinContainer title="/events/cyber-heist">
+            <PinContainer title="/events/promptxtreme">
               <div className="flex flex-col p-6 bg-gray-50 dark:bg-gray-900 shadow-xl rounded-lg transition-all w-[21rem] h-[21rem] space-y-4">
                 <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200">
-                  Cyber-Heist
+                  PromptXtreme
                 </h3>
                 <p className="text-base text-slate-500 dark:text-gray-400">
-                  Non-Technical event on 5 February 2024.
+                  Step into the Solo Leveling-themed AI battleground. Craft the
+                  most effective prompts, and rise as the S-Rank Prompter in
+                  this high-stakes AI showdown!
                 </p>
                 <div className="flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500">
                   <img
-                    src="/temp3.png"
+                    src="/temp4.png"
                     alt="Event Banner"
                     className="object-cover w-full h-full"
                   />
@@ -187,13 +191,15 @@ export default function Events() {
               whileTap={{ scale: 0.95 }}
               className="cursor-pointer"
             >
-              <PinContainer title="/events/bio-scope">
+              <PinContainer title="/events/think-tank-tussle">
                 <div className="flex flex-col p-6 bg-gray-50 dark:bg-gray-900 shadow-xl rounded-lg transition-all w-[21rem] h-[21rem] space-y-4">
                   <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200">
-                    Bio-Scope
+                    Think Tank Tussle
                   </h3>
                   <p className="text-base text-slate-500 dark:text-gray-400">
-                    Non-Technical event on 5 February 2024.
+                    Non-technical event packed with thrilling challenges and
+                    brain-teasing fun! Think Tank Tussle is designed to test you
+                    quick thinking through two engaging rounds
                   </p>
                   <div className="flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br from-green-500 via-teal-500 to-cyan-500">
                     <img
@@ -219,12 +225,12 @@ export default function Events() {
                 <div className="flex flex-col p-6 bg-gray-50 dark:bg-gray-900 shadow-xl rounded-lg transition-all w-[21rem] h-[21rem] space-y-4">
                   {" "}
                   <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200">
-                    {" "}
-                    Dumb Bugs{" "}
+                    Pencilvania
                   </h3>{" "}
                   <p className="text-base text-slate-500 dark:text-gray-400">
                     {" "}
-                    Technical event on 5 February 2024.{" "}
+                    Welcome to Pencilvania! A rapid-fire team game where drawing
+                    talent and rapid intellect meet!
                   </p>{" "}
                   <div className="flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br from-yellow-500 via-orange-500 to-red-500">
                     {" "}

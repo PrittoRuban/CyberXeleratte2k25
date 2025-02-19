@@ -123,7 +123,7 @@ const ProjectXplosion = () => {
             </motion.div>
           </div>
 
-          {/* Contact Details */}
+          {/* Contact Details
           <div className="text-center py-6">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -152,7 +152,7 @@ const ProjectXplosion = () => {
             >
               📞 <span className="font-bold">Triumbika M</span> - 87782 12225
             </motion.p>
-          </div>
+          </div> */}
 
           {/* Register Now Button */}
           <div className="flex justify-center py-4">

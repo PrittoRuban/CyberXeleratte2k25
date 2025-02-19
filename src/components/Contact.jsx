@@ -16,20 +16,18 @@ export default function Contact() {
 export const contacts = [
   {
     title: "Head Of Department CSE (Cyber Security)",
-    details: [{ name: "Dr. Udhaya Sankar S M", phone: "+91 0000000000" }],
+    details: [{ name: "Dr. Udhaya Sankar S M", phone: "" }],
   },
   {
-    title: "Faculty Coordinators",
+    title: "Faculty Coordinator - Associate Professor",
     details: [
-      { name: "Dr. Dharini N", phone: "+91 0000000000" },
-      { name: "Mr. Vinoth Kumar V", phone: "+91 0000000000" },
+      { name: "Dr. Dharini N", phone: "" },
     ],
   },
   {
     title: "Student Coordinators",
     details: [
-      { name: "Mr. Mohammed Mustafa A", phone: "+91 0000000000" },
-      { name: "Mr. Aswanth Babu", phone: "+91 0000000000" },
+      { name: "Mr. Aswanth Babu", phone: "+91 91509 08828" },
     ],
   },
 ];

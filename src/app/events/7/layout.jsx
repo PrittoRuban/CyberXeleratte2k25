@@ -1,3 +1,3 @@
-export default function Event7Layout({ children }) {
+export default function Event8Layout({ children }) {
   return <section>{children}</section>
 }
