@@ -88,7 +88,13 @@ const Header = () => {
               as="button"
               className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 hover:scale-105 transition-transform"
             >
-              <span>Register Now</span>
+            <a
+            href="/CyberXelerate.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+              Register Now
+              </a>
             </HoverBorderGradient>
           </Link>
           <button
