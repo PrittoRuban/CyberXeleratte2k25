@@ -107,7 +107,7 @@ export default function Events() {
                 </p>
                 <div className="flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br from-red-500 via-pink-500 to-purple-500">
                   <img
-                    src="/temp1.png"
+                    src="/temp5.png"
                     alt="Event Banner"
                     className="object-cover w-full h-full"
                   />
@@ -163,7 +163,7 @@ export default function Events() {
                 </p>
                 <div className="flex-1 w-full rounded-lg overflow-hidden bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500">
                   <img
-                    src="/temp5.png"
+                    src="/temp3.png"
                     alt="Event Banner"
                     className="object-cover w-full h-full"
                   />
