@@ -21,7 +21,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPos = window.scrollY;
-      const sections = ["home", "about", "events", "team", "contact"];
+      const sections = ["home", "about", "events", "guidelines", "contact"];
 
       // Update active section based on scroll position
       sections.forEach((section) => {
@@ -126,7 +126,7 @@ const Header = () => {
               { id: "home", label: "Home" },
               { id: "about", label: "About" },
               { id: "events", label: "Events" },
-              { id: "team", label: "Team" },
+              { id: "guidelines", label: "Guidelines" },
               { id: "contact", label: "Contact" },
             ].map((item) => (
               <li key={item.id}>

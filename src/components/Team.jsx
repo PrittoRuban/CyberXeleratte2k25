@@ -1,70 +1,76 @@
-"use client";
-
-// import React from "react";
-// import { useSectionObserver } from "@/hooks/intersection-observer";
-// import SectionHeading from "./ui/section-heading";
-
-// export default function Team() {
-//   useSectionObserver("team", "Team");
-
-//   return (
-//     <section
-//       id="team"
-//       className=""
-//     >
-//       <SectionHeading>Team</SectionHeading>
-//     </section>
-//   );
-// }
-
-import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { useSectionObserver } from "@/hooks/intersection-observer";
-import SectionHeading from "./ui/section-heading";
+import { motion } from "framer-motion";
 
-export default function Team() {
-  useSectionObserver("team", "Team");
-  const testimonials = [
-    {
-      quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ];
+const guidelines = [
+  "Students must bring their respective college ID card.",
+  "Usage of mobile phones and other electronic gadgets inside the campus should be avoided.",
+  "Confirmation mail for selection will be sent to your registered mail id.",
+  "Participants must only use the college bus which will be available on March 17th.",
+  "Boys must come in formal with clean shave.",
+  "Girls should wear formal dress.",
+  "No onspot Registration Allowed.",
+];
+
+const timeline = [
+  { time: "8:30 - 9:00", description: "Registration starts at Main Block" },
+  { time: "9:00 - 10:00", description: "Inauguration ceremony at Seminar Hall - Main block" },
+  { time: "10:00 - 12:00", description: "Events (Time and venue will be informed shortly)" },
+  { time: "12:00 - 1:30", description: "Lunch - Both Veg and Non-Veg" },
+  { time: "1:30 - 2:00", description: "Valedictory ceremony" },
+];
+
+export default function GeneralRules() {
+  useSectionObserver("rules", "General Rules");
+
   return (
-    <section id="team" className="relative backdrop-blur-sm bg-opacity-10">
-      <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-transparent"></div>
-      <SectionHeading>Team</SectionHeading>
-      <AnimatedTestimonials testimonials={testimonials} />
+    <section id="rules" className="py-16 px-4">
+      <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <header className="text-center mb-12">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 drop-shadow-lg">
+            General Rules
+          </h1>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Please read all rules carefully before proceeding
+          </p>
+        </header>
+
+        {/* Guidelines Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="bg-white dark:bg-gray-900 rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200 dark:border-gray-700 mb-12"
+        >
+          <ul className="list-disc pl-6 space-y-2 text-gray-900 dark:text-gray-100 text-lg">
+            {guidelines.map((rule, i) => (
+              <li key={i}>{rule}</li>
+            ))}
+          </ul>
+        </motion.div>
+
+        {/* Timeline */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            Timeline
+          </h2>
+        </div>
+        <div className="relative pl-8 border-l-2 border-gray-300 dark:border-gray-600">
+          {timeline.map((item, i) => (
+            <div key={i} className="mb-8 relative">
+              <div className="flex items-center mb-1">
+                <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 bg-gray-500 dark:bg-gray-400 w-3 h-3 rounded-full" />
+                <h3 className="text-xl font-semibold ml-8 text-gray-900 dark:text-white">
+                  {item.time}
+                </h3>
+              </div>
+              <p className="text-lg text-gray-700 dark:text-gray-300 ml-8 pl-4 border-l-2 border-gray-200 dark:border-gray-500">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
