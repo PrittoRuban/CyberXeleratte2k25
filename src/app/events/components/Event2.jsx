@@ -110,8 +110,7 @@ const Event2 = () => {
                   <span className="font-semibold">8.</span> Style: Jeopardy.
                 </li>
                 <li>
-                  <span className="font-semibold">9.</span> Mode: Offline
-                  (Venue: ME-302).
+                  <span className="font-semibold">9.</span> Mode: Offline.
                 </li>
               </ul>
             </motion.div>
