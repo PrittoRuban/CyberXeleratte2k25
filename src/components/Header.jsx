@@ -88,7 +88,7 @@ const Header = () => {
               as="button"
               className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 hover:scale-105 transition-transform"
             >
-              <div>Register Now</div>
+              <div>Event Poster</div>
             </HoverBorderGradient>
           </Link>
           <button

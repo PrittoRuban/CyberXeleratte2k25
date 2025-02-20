@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiLinktree, SiX } from "react-icons/si";
+import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
+import { SiGmail, SiInstagram, SiLinktree, SiMailboxdotorg, SiX } from "react-icons/si";
 import GoogleMap from "./ui/gmap";
 import SectionHeading from "./ui/section-heading";
 
@@ -35,20 +35,28 @@ const Footer = () => {
         </div>
         <div className="flex mt-4 md:mt-0 space-x-6">
           <a
-            href="https://twitter.com/PrittoRuban"
+            href="https://www.instagram.com/cyberxelerate_25/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 transform hover:scale-110"
           >
-            <SiX size={24} />
+            <SiInstagram size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/prittoruban/"
+            href="https://www.linkedin.com/in/cyberxelerate25/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 transform hover:scale-110"
           >
             <FaLinkedin size={24} />
+          </a>
+          <a
+            href="mailto:cyberxelerate2@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-800 dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 transform hover:scale-110"
+          >
+            <SiGmail size={24} />
           </a>
           <a
             href="https://github.com/PrittoRuban"
@@ -58,30 +66,22 @@ const Footer = () => {
           >
             <FaGithub size={24} />
           </a>
-          <a
-            href="https://linktr.ee/prittoruban"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-800 dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 transform hover:scale-110"
-          >
-            <SiLinktree size={24} />
-          </a>
         </div>
       </div>
       <div className="container mx-auto px-6 text-center mt-4 md:mt-8 relative z-10">
         <p className="text-sm">
           &copy; {new Date().getFullYear().toString()} All rights reserved.
         </p>
-        {/* <span className="text-sm">
+        <span className="text-sm">
           Made with ❤️ By{" "}
           <a
-            href="https://www.linkedin.com/in/prittoruban/"
+            href="https://www.linkedin.com/in/rmkcet-cse-cyber-security-a264a528b/"
             target="_blank"
-            className=" hover:text-blue-500"
+            className=" text-gray-800 dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 transform hover:scale-110"
           >
-            Pritto Ruban
+            Department of CSE (Cyber Security)
           </a>
-        </span> */}
+        </span>
       </div>
     </footer>
   );

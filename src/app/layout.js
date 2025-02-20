@@ -46,7 +46,7 @@ const metalGothic = localFont({
 export const metadata = {
   title: "CyberXelerate 2K25",
   description:
-    "The CyberXelerate-2k24 symposium at RMK College of Engineering and Technology offers a range of technical and non-technical competitions, including paper presentations, coding challenges, and penetration testing. Participants can attend without registration fees and have the chance to win cash prizes1. The event promises a professional atmosphere with a formal dress code and complimentary food.",
+    "The CyberXelerate-2k25 symposium at RMK College of Engineering and Technology offers a range of technical and non-technical competitions, including paper presentations, coding challenges, and penetration testing. Participants can attend without registration fees and have the chance to win cash prizes1. The event promises a professional atmosphere with a formal dress code and complimentary food.",
 };
 
 export default function RootLayout({ children }) {

@@ -38,7 +38,7 @@ export const HoverEffect = ({ items, className }) => {
             )}
           </AnimatePresence>
           {item.link ? (
-            <Link href={item.link} className="block h-full w-full">
+            <Link href={item.link} target="_blank" className="block h-full w-full">
               <HoverCard item={item} />
             </Link>
           ) : (

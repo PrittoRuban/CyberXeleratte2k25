@@ -178,7 +178,9 @@ const PromptXtreme = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfBIXHLRkJBHDj47eLN04acwbtsJel4h8Su_wpwfIUyQM05Vg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg"
             >
               Register Now
