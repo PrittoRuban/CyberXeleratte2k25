@@ -63,9 +63,9 @@ const ThinkTankTussle = () => {
               className="flex justify-center"
             >
               <img
-                src="/temp1poster.png" // Replace with your actual poster image path
+                src="/think-poster.jpg" // Replace with your actual poster image path
                 alt="Think Tank Tussle Poster"
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm object-cover rounded-2xl shadow-lg dark:shadow-black/50"
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
               />
             </motion.div>
 
@@ -164,7 +164,9 @@ const ThinkTankTussle = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd3BuNpvu_mZl0UP0aI3iYzQtqy6ygCo_gNTVwj8L1rNOdjxg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg"
             >
               Register Now

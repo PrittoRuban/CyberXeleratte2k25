@@ -53,7 +53,7 @@ const PromptXtreme = () => {
               className="flex justify-center"
             >
               <img
-                src="/temp1poster.png" // Replace with your actual poster path
+                src="/promptXtreme.png" // Replace with your actual poster path
                 alt="PromptXtreme Poster"
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
               />

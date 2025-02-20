@@ -33,9 +33,12 @@ const CodeSprintOdyssey = () => {
               viewport={{ once: true }}
               className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-4"
             >
-              Test Your Speed &amp; Teamwork! Experience the thrill of coding in a high-stakes relay.
-              In this fast-paced event, teams of three will take turns at the keyboard—switching every 5 minutes—to tackle coding challenges as quickly as possible.
-              Get ready for the ultimate test of speed, skill, and collaboration—because every second counts!
+              Test Your Speed &amp; Teamwork! Experience the thrill of coding in
+              a high-stakes relay. In this fast-paced event, teams of three will
+              take turns at the keyboard—switching every 5 minutes—to tackle
+              coding challenges as quickly as possible. Get ready for the
+              ultimate test of speed, skill, and collaboration—because every
+              second counts!
             </motion.p>
           </div>
 
@@ -50,7 +53,7 @@ const CodeSprintOdyssey = () => {
               className="flex justify-center"
             >
               <img
-                src="/temp1poster.png" // Replace with actual image path
+                src="/codesprint-poster.jpg" // Replace with actual image path
                 alt="CodeSprint Odyssey Poster"
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
               />
@@ -69,31 +72,40 @@ const CodeSprintOdyssey = () => {
               </h2>
               <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
                 <li>
-                  <span className="font-semibold">Team Size:</span> Compulsory 3 members per team.
+                  <span className="font-semibold">Team Size:</span> Compulsory 3
+                  members per team.
                 </li>
                 <li>
-                  <span className="font-semibold">Duration:</span> 1 hour 30 minutes (approx).
+                  <span className="font-semibold">Duration:</span> 1 hour 30
+                  minutes (approx).
                 </li>
                 <li>
-                  <span className="font-semibold">Timing:</span> 10:30 AM – 12:00 PM (approx).
+                  <span className="font-semibold">Timing:</span> 10:30 AM –
+                  12:00 PM (approx).
                 </li>
                 <li>
-                  <span className="font-semibold">No Backseat Coding:</span> Teams discussing code with an external party will be disqualified.
+                  <span className="font-semibold">No Backseat Coding:</span>{" "}
+                  Teams discussing code with an external party will be
+                  disqualified.
                 </li>
                 <li>
-                  <span className="font-semibold">Punctuality:</span> Arrive at the venue on time.
+                  <span className="font-semibold">Punctuality:</span> Arrive at
+                  the venue on time.
                 </li>
                 <li>
                   <span className="font-semibold">Platform:</span> Hackerrank.
                 </li>
                 <li>
-                  <span className="font-semibold">Mode:</span> Offline (<span className="font-bold">Venue:</span> To be decided).
+                  <span className="font-semibold">Mode:</span> Offline (
+                  <span className="font-bold">Venue:</span> To be decided).
                 </li>
                 <li>
-                  <span className="font-semibold">Round:</span> Single round to decide the top 3 teams based on leaderboard position.
+                  <span className="font-semibold">Round:</span> Single round to
+                  decide the top 3 teams based on leaderboard position.
                 </li>
                 <li className="text-red-500 dark:text-red-400 pt-8">
-                  <span className="font-semibold">Prizes:</span> Exciting cash prizes for winners and participation certificates for all.
+                  <span className="font-semibold">Prizes:</span> Exciting cash
+                  prizes for winners and participation certificates for all.
                 </li>
               </ul>
             </motion.div>
@@ -137,7 +149,9 @@ const CodeSprintOdyssey = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              href="#register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdJ4E6J_q49CSi5ahsx_a1JfN8KKFTq_52basjkKJ8D59Rchg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg"
             >
               Register Now

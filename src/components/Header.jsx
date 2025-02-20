@@ -79,7 +79,7 @@ const Header = () => {
 
         <div className="flex md:order-2 space-x-3 rtl:space-x-reverse">
           <Link
-            href="https://rmkcet.ac.in"
+            href="/CyberXelerate.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -88,13 +88,7 @@ const Header = () => {
               as="button"
               className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 hover:scale-105 transition-transform"
             >
-            <a
-            href="/CyberXelerate.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              Register Now
-              </a>
+              <div>Register Now</div>
             </HoverBorderGradient>
           </Link>
           <button
