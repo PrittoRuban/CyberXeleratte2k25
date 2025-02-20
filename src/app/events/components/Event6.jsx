@@ -18,14 +18,17 @@ const ThinkTankTussle = () => {
               viewport={{ once: true }}
               className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
             >
+              Welcome to{" "}
+              <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text">
               Think Tank Tussle
+              </span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-4"
+              className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-4 font-mono"
             >
               Non-technical event packed with thrilling challenges and
               brain-teasing fun! Think Tank Tussle tests your quick thinking
@@ -36,7 +39,7 @@ const ThinkTankTussle = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-md md:text-lg text-gray-700 dark:text-gray-300"
+              className="text-md md:text-lg text-gray-700 dark:text-gray-300 font-mono"
             >
               <span className="font-bold">
                 Round 1 – The Brainstorm Battle:
@@ -75,7 +78,7 @@ const ThinkTankTussle = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="p-5 md:p-10 rounded-2xl shadow-lg dark:shadow-black/50 bg-white/30 dark:bg-black/30 backdrop-blur-md border border-gray-200/50 dark:border-gray-800/50"
+              className="p-5 md:p-10 rounded-2xl shadow-lg dark:shadow-black/50 bg-white/30 dark:bg-black/30 backdrop-blur-md border border-gray-200/50 dark:border-gray-800/50 font-mono"
             >
               <h2 className="text-2xl font-bold underline text-gray-800 dark:text-gray-200 mb-4">
                 Rules &amp; Gameplay

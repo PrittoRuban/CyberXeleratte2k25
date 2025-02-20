@@ -31,7 +31,7 @@ const PromptXtreme = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-4"
+              className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-4 font-mono"
             >
               Step into the Solo Leveling-themed AI battleground with
               PromptXtreme! Test your prompt engineering skills in an intense
@@ -66,7 +66,7 @@ const PromptXtreme = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
               className="p-5 md:p-10 rounded-2xl shadow-lg dark:shadow-black/50 bg-white/30 dark:bg-black/30 
-                         backdrop-blur-md border border-gray-200/50 dark:border-gray-800/50"
+                         backdrop-blur-md border border-gray-200/50 dark:border-gray-800/50 font-mono"
             >
               <h2 className="text-2xl font-bold underline text-gray-800 dark:text-gray-200 mb-4">
                 Rules &amp; Guidelines

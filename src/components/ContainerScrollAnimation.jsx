@@ -23,10 +23,10 @@ export function ContainerScrollAnimation() {
                 <span className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-indigo-400 via-green-500 to-blue-600 text-transparent bg-clip-text">
                   X
                 </span>
-                elerate
+                elerate 2.0
               </span>
             </h1>
-            <p className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-6">
+            <p className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-6 font-serif">
               Empowering the next generation of cybersecurity enthusiasts
               through{" "}
               <span className="text-blue-500 dark:text-green-400 font-bold">
@@ -37,7 +37,7 @@ export function ContainerScrollAnimation() {
                 unparalleled opportunities.
               </span>
             </p>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 sm:mb-8">
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 sm:mb-8 font-serif">
               Join us in a journey to explore, compete, and excel in the
               ever-evolving world of{" "}
               <span className="bg-gradient-to-r from-blue-500 via-green-500 to-teal-500 inline-block sm:mb-8 text-transparent bg-clip-text">
@@ -59,7 +59,7 @@ export function ContainerScrollAnimation() {
             draggable={false}
           /></div>
           <p className="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center space-x-2 mb-4">
-            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text font-serif">
               Let&apos;s get started! Happy Hacking
             </span>
             <span className="2xl">🧑‍💻</span>

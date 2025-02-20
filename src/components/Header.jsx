@@ -72,7 +72,7 @@ const Header = () => {
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             R.M.K College of Engineering and Technology
           </span>
-          <span className="self-center text-sm whitespace-nowrap dark:text-gray-300">
+          <span className="self-center text-sm whitespace-nowrap dark:text-gray-300 font-serif">
             Department of Computer Science and Engineering (Cyber Security)
           </span>
         </div>

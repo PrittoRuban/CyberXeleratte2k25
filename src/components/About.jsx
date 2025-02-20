@@ -36,7 +36,7 @@ export default function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-300"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-600 dark:text-gray-300 font-serif"
           >
             Join us for the{" "}
             <span className="font-bold text-gray-900 dark:text-white">
@@ -90,7 +90,7 @@ export default function About() {
                 {
                   text: "Transport Facilities",
                   description:
-                    "Convenient transport provided, with routes updated via WhatsApp.",
+                    "Convenient transport provided (will be updated soon).",
                 },
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-2 sm:gap-4">
@@ -101,10 +101,10 @@ export default function About() {
                     ➤
                   </span>
                   <span className="text-gray-600 dark:text-gray-300 text-base md:text-xl">
-                    <span className="font-bold text-gray-900 dark:text-white">
+                    <span className="font-bold text-gray-900 dark:text-white font-serif">
                       {item.text}
-                    </span>
-                    : {item.description}
+                    </span> {" "} <span className="font-serif">
+                    : {item.description}</span>
                   </span>
                 </li>
               ))}
@@ -117,19 +117,19 @@ export default function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="mt-12"
+            className="mt-12 font-serif"
           >
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-teal-500 dark:text-teal-300">
               Event Details
             </h2>
             <p className="mt-4 text-gray-600 dark:text-gray-300 text-base sm:text-base md:text-lg">
               📅{" "}
-              <span className="font-bold text-gray-900 dark:text-white">
+              <span className="font-bold text-gray-900 dark:text-white font-serif">
                 Date
               </span>
               : March 17, 2025 <br />
               📍{" "}
-              <span className="font-bold text-gray-900 dark:text-white">
+              <span className="font-bold text-gray-900 dark:text-white font-serif">
                 Location
               </span>
               : R.M.K College of Engineering and Technology, Tamil Nadu
@@ -145,10 +145,10 @@ export default function About() {
             className="mt-8"
           >
             <a
-              href="#register"
+              href="#"
               className="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg hover:from-teal-400 hover:to-blue-500 transition-all dark:from-teal-400 dark:to-blue-500 dark:hover:from-blue-500 dark:hover:to-teal-400"
             >
-              Register Now
+              Transport Details
             </a>
           </motion.div>
         </motion.div>

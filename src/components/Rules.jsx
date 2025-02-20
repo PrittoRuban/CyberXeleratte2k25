@@ -26,7 +26,7 @@ export default function GeneralRules() {
     <section id="guidelines" className="py-16 px-4">
       <div className="relative max-w-4xl mx-auto">
       
-      <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#4a4770]"></div>
+      {/* <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#4a4770]"></div> */}
         {/* Header */}
         <header className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 drop-shadow-lg">
@@ -42,7 +42,7 @@ export default function GeneralRules() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="bg-white dark:bg-gray-900 rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200 dark:border-gray-700 mb-12"
+          className=" backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200 dark:border-gray-700 mb-12 font-serif"
         >
           <ul className="list-disc pl-6 space-y-2 text-gray-900 dark:text-gray-100 text-lg">
             {guidelines.map((rule, i) => (
@@ -57,9 +57,9 @@ export default function GeneralRules() {
             Timeline
           </h2>
         </div>
-        <div className="relative pl-8 border-l-2 border-gray-300 dark:border-gray-600">
+        <div className="relative pl-8 border-l-2 border-gray-300 dark:border-gray-600 font-serif backdrop-blur-sm ">
           {timeline.map((item, i) => (
-            <div key={i} className="mb-8 relative">
+            <div key={i} className="mb-8 relative pt-5 ">
               <div className="flex items-center mb-1">
                 <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 bg-gray-500 dark:bg-gray-400 w-3 h-3 rounded-full" />
                 <h3 className="text-xl font-semibold ml-8 text-gray-900 dark:text-white">
