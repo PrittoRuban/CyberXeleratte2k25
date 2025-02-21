@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import { useSectionObserver } from "@/hooks/intersection-observer";
 // Removed unused import: SectionHeading
 import { motion } from "framer-motion";

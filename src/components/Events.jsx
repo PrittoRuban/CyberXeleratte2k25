@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 import { useRouter } from "next/navigation";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { useSectionObserver } from "@/hooks/intersection-observer";

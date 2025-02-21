@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
