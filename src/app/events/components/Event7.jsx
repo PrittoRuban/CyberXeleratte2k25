@@ -66,7 +66,7 @@ const Pencilvania = () => {
               <img
                 src="/pencil-poster.jpg" // Replace with your actual poster image path
                 alt="Pencilvania Poster"
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm object-cover rounded-2xl shadow-lg dark:shadow-black/50"
+                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
               />
             </motion.div>
 

@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            {/* <div className="w-full h-full absolute -z-20">
+            <div className="w-full h-full absolute -z-20">
               <SparklesCore
                 id="tsparticlesfullpage"
                 background="transparent"
@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
                 className="w-full h-full"
                 particleColor="#FFFFFF"
               />
-            </div> */}
+            </div>
             <main className="relative min-h-screen flex flex-col">
               {children}
               <ThemeSwitch />
