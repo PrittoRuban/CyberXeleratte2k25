@@ -42,8 +42,8 @@ const Header = () => {
               alt="RMKCET Logo"
             />
           </Link>
-          <div className="hidden md:flex flex-col">
-            <span className="text-lg font-semibold whitespace-nowrap dark:text-white">
+          <div className="hidden md:flex flex-col lg:pl-12 font-serif">
+            <span className="text-lg whitespace-nowrap dark:text-white font-normal ">
               R.M.K College of Engineering and Technology
             </span>
             <span className="text-sm whitespace-nowrap dark:text-gray-300">

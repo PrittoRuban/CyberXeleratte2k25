@@ -1,19 +1,15 @@
-import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
-import {
-  SiGmail,
-  SiInstagram,
-  SiLinktree,
-  SiMailboxdotorg,
-  SiX,
-} from "react-icons/si";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGmail, SiInstagram } from "react-icons/si";
 import GoogleMap from "./ui/gmap";
 import SectionHeading from "./ui/section-heading";
 
 const Footer = () => {
   const address =
     "RSM Nagar, Gummidipoondi Taluk, Puduvoyal, Thiruvallur, Tamil Nadu 601206, India";
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="relative  text-black dark:text-white py-8 backdrop-blur-sm">
+    <footer className="relative text-black dark:text-white py-8 backdrop-blur-sm">
       <div className="bg-[#fbe2e3] absolute -z-10 left-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#4b2c2c]"></div>
 
       <div className="container mx-auto px-4 max-w-screen-md py-12 mb-12">
@@ -26,7 +22,7 @@ const Footer = () => {
 
       <div className="container mx-auto px-6 flex md:space-x-52 flex-col items-center md:flex-row md:justify-between md:gap-6 z-10 max-w-screen-lg">
         <div className="text-center md:text-left">
-          <h2 className="text-2xl font-bold mb-4 hidden sm:block">
+          <h2 className="text-2xl font-medium mb-4 hidden sm:block">
             <a
               href="https://www.rmkcet.ac.in/"
               target="_blank"
@@ -87,16 +83,17 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="container mx-auto px-6 text-center mt-4 md:mt-8 relative z-10 ">
+      <div className="container mx-auto px-6 text-center mt-4 md:mt-8 relative z-10">
         <p className="text-sm font-serif">
-          &copy; {new Date().getFullYear().toString()} All rights reserved.
+          &copy; {currentYear} All rights reserved.
         </p>
-        <span className="text-sm">
+        <span className="text-sm font-serif">
           Made with ❤️ By{" "}
           <a
             href="https://www.linkedin.com/in/rmkcet-cse-cyber-security-a264a528b/"
             target="_blank"
-            className=" text-gray-800 dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 transform hover:scale-110"
+            rel="noopener noreferrer"
+            className="text-gray-800 dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 transform hover:scale-110"
           >
             Department of CSE (Cyber Security)
           </a>

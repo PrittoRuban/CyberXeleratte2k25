@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import About from "@/components/About";
@@ -9,7 +10,6 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SectionDivider from "@/components/ui/section-divider";
 import GeneralRules from "@/components/Rules";
-
 
 const greetings = [
   { language: "Hello", color: "text-red-500" },
@@ -32,7 +32,6 @@ export default function Home() {
     const lastVisit = localStorage.getItem("lastVisit");
     const now = Date.now();
 
-    // Check if the animation should be shown (after 3 hours or first visit)
     if (!lastVisit || now - parseInt(lastVisit, 10) > 3 * 60 * 60 * 1000) {
       setIsLoading(true);
       localStorage.setItem("lastVisit", now.toString());
@@ -40,38 +39,36 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (isLoading) {
-      // Cycle through greetings during loading
-      const interval = setInterval(() => {
-        setCurrentGreeting((prev) => (prev + 1) % greetings.length);
-      }, 400);
+    if (!isLoading) return;
 
-      // Simulate background loading (adjust timing if needed)
-      const timeout = setTimeout(() => {
-        setIsLoading(false);
-      }, 4000); // Adjust to match loading requirements
+    const interval = setInterval(() => {
+      setCurrentGreeting((prev) => (prev + 1) % greetings.length);
+    }, 400);
 
-      return () => {
-        clearInterval(interval);
-        clearTimeout(timeout);
-      };
-    }
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
   }, [isLoading]);
 
   return (
     <>
       <AnimatePresence>
         {isLoading ? (
-          // Loading Screen with Animated Greetings and Mirrored Background
           <motion.div
             key="loading-screen"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 flex items-center justify-center z-50 bg-gray-700 bg-opacity-50 backdrop-filter backdrop-blur-lg"
+            className="fixed inset-0 flex items-center justify-center z-50 bg-gray-700 bg-opacity-50 backdrop-blur-lg"
+            aria-hidden="true"
           >
             <motion.div
-              key={currentGreeting}
+              key={greetings[currentGreeting].language}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
@@ -82,8 +79,7 @@ export default function Home() {
             </motion.div>
           </motion.div>
         ) : (
-          // Main Content
-          <main className={`flex flex-col items-center px-4 overflow-hidden`}>
+          <main className="flex flex-col items-center px-4 overflow-hidden">
             <Header />
             <ContainerScrollAnimation />
             <SectionDivider />

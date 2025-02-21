@@ -13,8 +13,14 @@ const guidelines = [
 
 const timeline = [
   { time: "8:30 - 9:00", description: "Registration starts at Main Block" },
-  { time: "9:00 - 10:00", description: "Inauguration ceremony at Seminar Hall - Main block" },
-  { time: "10:00 - 12:45", description: "Events (Time and venue will be informed shortly)" },
+  {
+    time: "9:00 - 10:00",
+    description: "Inauguration ceremony at Seminar Hall - Main block",
+  },
+  {
+    time: "10:00 - 12:45",
+    description: "Events (Time and venue will be informed shortly)",
+  },
   { time: "12:45 - 1:30", description: "Lunch - Both Veg and Non-Veg" },
   { time: "1:30 - 2:00", description: "Valedictory ceremony" },
 ];
@@ -25,11 +31,10 @@ export default function GeneralRules() {
   return (
     <section id="guidelines" className="py-16 px-4">
       <div className="relative max-w-4xl mx-auto">
-      
-      {/* <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#4a4770]"></div> */}
+        {/* <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#4a4770]"></div> */}
         {/* Header */}
         <header className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 drop-shadow-lg">
+          <h1 className="text-5xl md:text-6xl font-medium text-gray-900 dark:text-white mb-4 drop-shadow-lg">
             General Rules
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -42,7 +47,7 @@ export default function GeneralRules() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className=" backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200 dark:border-gray-700 mb-12 font-serif"
+          className="backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200 dark:border-gray-700 mb-12 font-serif"
         >
           <ul className="list-disc pl-6 space-y-2 text-gray-900 dark:text-gray-100 text-lg">
             {guidelines.map((rule, i) => (
@@ -53,7 +58,7 @@ export default function GeneralRules() {
 
         {/* Timeline */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl font-medium text-gray-800 dark:text-white mb-4">
             Timeline
           </h2>
         </div>
@@ -61,7 +66,10 @@ export default function GeneralRules() {
           {timeline.map((item, i) => (
             <div key={i} className="mb-8 relative pt-5 ">
               <div className="flex items-center mb-1">
-                <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 bg-gray-500 dark:bg-gray-400 w-3 h-3 rounded-full" />
+                <div
+                  className="absolute -left-2 top-1/2 transform -translate-y-1/2 bg-gray-500 dark:bg-gray-400 w-3 h-3 rounded-full"
+                  aria-hidden="true"
+                />
                 <h3 className="text-xl font-semibold ml-8 text-gray-900 dark:text-white">
                   {item.time}
                 </h3>

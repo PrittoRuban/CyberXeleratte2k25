@@ -4,7 +4,6 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
 import Countdown from "./ui/Timer";
 import { useSectionObserver } from "@/hooks/intersection-observer";
-import SectionHeading from "./ui/section-heading";
 
 export function ContainerScrollAnimation() {
   useSectionObserver("home", "Home");
@@ -16,7 +15,7 @@ export function ContainerScrollAnimation() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl md:text-6xl font-bold sm:font-extrabold mb-3 text-gray-950 dark:text-gray-50 sm:mb-5 leading-tight">
+            <h1 className="text-4xl md:text-6xl  mb-3 text-gray-700 dark:text-gray-50 sm:mb-5 leading-tight font-medium">
               Welcome to{" "}
               <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text">
                 Cyber
@@ -48,16 +47,17 @@ export function ContainerScrollAnimation() {
         }
       >
         <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 mb-2 mt-2">
-        <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 mr-2 ml-2">
-          <Countdown eventDate="March 17, 2025 08:30:00" />
-          <Image
-            src="/kali.png"
-            alt="hero"
-            height={820}
-            width={1200}
-            className="rounded-2xl object-cover sm:object-top shadow-lg"
-            draggable={false}
-          /></div>
+          <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-8 mr-2 ml-2">
+            <Countdown eventDate="March 17, 2025 08:30:00" />
+            <Image
+              src="/kali.png"
+              alt="hero"
+              height={820}
+              width={1200}
+              className="rounded-2xl object-cover sm:object-top shadow-lg"
+              draggable={false}
+            />
+          </div>
           <p className="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center space-x-2 mb-4">
             <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
               Let&apos;s get started! Happy Hacking

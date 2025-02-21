@@ -11,7 +11,7 @@ export default function Contact() {
       className="relative max-w-5xl mx-auto px-8 mb-12 backdrop-blur-sm"
     >
       <SectionHeading>Contact</SectionHeading>
-      <div className="font-serif text-gray-600 dark:text-gray-400 text-lg">
+      <div className="font-serif text-gray-600 dark:text-gray-400 text-md">
       <HoverEffect items={contacts} className="gap-6" /></div>
     </section>
   );

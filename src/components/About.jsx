@@ -2,12 +2,35 @@
 
 import React from "react";
 import { useSectionObserver } from "@/hooks/intersection-observer";
-import SectionHeading from "./ui/section-heading";
+// Removed unused import: SectionHeading
 import { motion } from "framer-motion";
 import { LampContainer } from "@/components/ui/lamp";
 
 export default function About() {
   useSectionObserver("about", "CyberXelerate-2k25");
+
+  const features = [
+    {
+      text: "No Registration Fees",
+      description: "Participate at absolutely no cost.",
+    },
+    {
+      text: "Exciting Cash Prizes",
+      description: "Showcase your cybersecurity expertise and win big.",
+    },
+    {
+      text: "Complimentary Food",
+      description: "Enjoy free meals while you dive into the challenges.",
+    },
+    {
+      text: "Professional Atmosphere",
+      description: "Dress formally and connect with industry experts.",
+    },
+    {
+      text: "Transport Facilities",
+      description: "Convenient transport provided (will be updated soon).",
+    },
+  ];
 
   return (
     <section id="about" className="relative py-8 bg-transparent mt-40 sm:mt-0">
@@ -25,7 +48,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-100"
+            className="text-3xl sm:text-4xl md:text-6xl tracking-tight text-gray-800 dark:text-gray-100 font-medium"
           >
             Ignite Your Cybersecurity Passion
           </motion.h1>
@@ -67,32 +90,7 @@ export default function About() {
             className="mt-8"
           >
             <ul className="space-y-4 md:space-y-3">
-              {[
-                {
-                  text: "No Registration Fees",
-                  description: "Participate at absolutely no cost.",
-                },
-                {
-                  text: "Exciting Cash Prizes",
-                  description:
-                    "Showcase your cybersecurity expertise and win big.",
-                },
-                {
-                  text: "Complimentary Food",
-                  description:
-                    "Enjoy free meals while you dive into the challenges.",
-                },
-                {
-                  text: "Professional Atmosphere",
-                  description:
-                    "Dress formally and connect with industry experts.",
-                },
-                {
-                  text: "Transport Facilities",
-                  description:
-                    "Convenient transport provided (will be updated soon).",
-                },
-              ].map((item, index) => (
+              {features.map((item, index) => (
                 <li key={index} className="flex items-start gap-2 sm:gap-4">
                   <span
                     className="text-blue-500 dark:text-teal-300 font-semibold"
@@ -103,8 +101,8 @@ export default function About() {
                   <span className="text-gray-600 dark:text-gray-300 text-base md:text-xl">
                     <span className="font-bold text-gray-900 dark:text-white font-serif">
                       {item.text}
-                    </span> {" "} <span className="font-serif">
-                    : {item.description}</span>
+                    </span>{" "}
+                    <span className="font-serif">: {item.description}</span>
                   </span>
                 </li>
               ))}
@@ -146,7 +144,7 @@ export default function About() {
           >
             <a
               href="#"
-              className="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg hover:from-teal-400 hover:to-blue-500 transition-all dark:from-teal-400 dark:to-blue-500 dark:hover:from-blue-500 dark:hover:to-teal-400"
+              className="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-md font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg hover:from-teal-400 hover:to-blue-500 transition-all dark:from-teal-400 dark:to-blue-500 dark:hover:from-blue-500 dark:hover:to-teal-400 font-serif"
             >
               Transport Details
             </a>

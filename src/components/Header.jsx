@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 const Header = () => {
@@ -9,47 +9,42 @@ const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   const handleSectionClick = (section) => {
     setActiveSection(section);
-    setIsMenuOpen(false); // Close the menu on mobile after selection
+    setIsMenuOpen(false); // Close menu on selection (for mobile)
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPos = window.scrollY;
-      const sections = ["home", "about", "events", "guidelines", "contact"];
+  // Optimized Scroll Handler
+  const handleScroll = useCallback(() => {
+    const scrollPos = window.scrollY;
+    const sections = ["home", "about", "events", "guidelines", "contact"];
 
-      // Update active section based on scroll position
-      sections.forEach((section) => {
-        const sectionElement = document.getElementById(section);
-        if (sectionElement) {
-          const offsetTop = sectionElement.offsetTop - 120; // Adjust for navbar height
-          const offsetHeight = sectionElement.offsetHeight;
-
-          if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
-            setActiveSection(section);
-          }
+    let foundSection = "";
+    for (const section of sections) {
+      const el = document.getElementById(section);
+      if (el) {
+        const offsetTop = el.offsetTop - 120; // Adjust for navbar height
+        if (scrollPos >= offsetTop && scrollPos < offsetTop + el.offsetHeight) {
+          foundSection = section;
+          break;
         }
-      });
-
-      // Show or hide the header based on scroll direction
-      if (scrollPos > lastScrollY && scrollPos > 80) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
       }
-      setLastScrollY(scrollPos);
-    };
+    }
 
+    if (foundSection && foundSection !== activeSection) {
+      setActiveSection(foundSection);
+    }
+
+    setIsVisible(scrollPos < lastScrollY || scrollPos < 80);
+    setLastScrollY(scrollPos);
+  }, [lastScrollY, activeSection]);
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
 
   return (
     <nav
@@ -69,7 +64,7 @@ const Header = () => {
           />
         </Link>
         <div className="hidden xl:flex flex-col">
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-xl font-medium whitespace-nowrap dark:text-white">
             R.M.K College of Engineering and Technology
           </span>
           <span className="self-center text-sm whitespace-nowrap dark:text-gray-300 font-serif">
@@ -86,7 +81,7 @@ const Header = () => {
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
-              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 hover:scale-105 transition-transform"
+              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 hover:scale-105 transition-transform font-serif"
             >
               <div>Event Poster</div>
             </HoverBorderGradient>
@@ -94,10 +89,9 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-sticky"
+            aria-label="Toggle navigation menu"
             aria-expanded={isMenuOpen}
           >
-            <span className="sr-only">Open main menu</span>
             <svg
               className="w-5 h-5"
               xmlns="http://www.w3.org/2000/svg"
@@ -122,25 +116,20 @@ const Header = () => {
           id="navbar-sticky"
         >
           <ul className="flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-0 rounded-lg md:border-0">
-            {[
-              { id: "home", label: "Home" },
-              { id: "about", label: "About" },
-              { id: "events", label: "Events" },
-              { id: "guidelines", label: "Guidelines" },
-              { id: "contact", label: "Contact" },
-            ].map((item) => (
-              <li key={item.id}>
+            {["home", "about", "events", "guidelines", "contact"].map((id) => (
+              <li key={id}>
                 <Link
-                  href={`#${item.id}`}
-                  onClick={() => handleSectionClick(item.id)}
-                  className={`block py-2 px-4 font-bold rounded-full transition-colors duration-200 ease-in-out 
+                  href={`#${id}`}
+                  onClick={() => handleSectionClick(id)}
+                  className={`block py-2 px-4 rounded-full transition-colors duration-200 ease-in-out font-serif
                     ${
-                      activeSection === item.id
+                      activeSection === id
                         ? "border-2 border-gray-400 dark:border-gray-600"
-                        : "text-gray-900 "
-                    } dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600`}
+                        : "text-gray-900"
+                    }
+                    dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600`}
                 >
-                  {item.label}
+                  {id.charAt(0).toUpperCase() + id.slice(1)}
                 </Link>
               </li>
             ))}
