@@ -5,6 +5,7 @@ import ActiveSectionContextProvider from "@/context/active-section";
 import ThemeSwitch from "@/components/ui/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { SparklesCore } from "@/components/ui/sparkles";
+import { Analytics } from "@vercel/analytics/react";
 
 // Custom fonts
 const soloLevelingFont = localFont({
@@ -69,6 +70,7 @@ export default function RootLayout({ children }) {
             </div>
             <main className="relative min-h-screen flex flex-col">
               {children}
+              <Analytics />
               <ThemeSwitch />
             </main>
           </ActiveSectionContextProvider>
