@@ -74,11 +74,11 @@ const nonTechnicalEvents = [
   },
   {
     id: "7",
-    route: "/events/dumb-bugs",
+    route: "/events/pencilvania",
     title: "Pencilvania",
     description:
       "Welcome to Pencilvania! A rapid-fire team game where drawing talent and rapid intellect meet!",
-    imageSrc: "/temp7.png",
+    imageSrc: "/temp7.jpg",
     gradient: "bg-gradient-to-br from-yellow-500 via-orange-500 to-red-500",
   },
 ];
